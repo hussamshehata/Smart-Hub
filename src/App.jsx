@@ -3,6 +3,7 @@ import React from "react";
 import ProductButtons from "@/components/ProductButtons"; // or "./components/ProductButtons" if you don't use @ alias
 import Shipping from "@/components/shippingForm";
 import ContactInformation from "@/components/ContactInformation";
+import ProductCard from "./Components/ProductCard";
 function App() {
     return (
         <div className="p-8">
@@ -12,6 +13,7 @@ function App() {
             <ContactInformation />
             <Shipping />
 
+            <ProductCard/>
         </div>
     );
 }
