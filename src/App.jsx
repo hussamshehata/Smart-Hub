@@ -4,10 +4,12 @@ import ProductButtons from "@/components/ProductButtons"; // or "./components/Pr
 import Shipping from "@/components/shippingForm";
 import ContactInformation from "@/components/ContactInformation";
 import ProductCard from "./Components/ProductCard";
+import Header from "./components/Header"
+
 function App() {
     return (
-        <div className="p-8">
-            <h1 className="text-2xl font-heading mb-4">Product</h1>
+        <div>
+            <Header/>
             {/* other product details here */}
             <ProductButtons />
             <ContactInformation />
