@@ -3,12 +3,16 @@ import React from "react";
 import ProductButtons from "@/components/ProductButtons"; // or "./components/ProductButtons" if you don't use @ alias
 import Shipping from "@/components/shippingForm";
 import ContactInformation from "@/components/ContactInformation";
-import ProductCard from "./Components/ProductCard";
+import ProductCard from "./Components/ProductCard.jsx";
 import Header from "./components/Header"
+import GridSection from "@/Components/GridSection.jsx";
 
 function App() {
     return (
-        <div>
+        <GridSection>
+
+<div>
+
             <Header/>
             {/* other product details here */}
             <ProductButtons />
@@ -16,7 +20,9 @@ function App() {
             <Shipping />
 
             <ProductCard/>
-        </div>
+</div>
+        </GridSection>
+
     );
 }
 

@@ -1,4 +1,11 @@
-function Header() {
+import React, { useState } from "react";
+import { Menu, X, ShoppingCart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [cartCount, ] = useState(3); // 👈 example number, later this can come from context or API
+
     return (
         <>
             {/* Announcement Bar */}
@@ -10,24 +17,67 @@ function Header() {
             <nav className="bg-white shadow-md">
                 <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
                     {/* Logo */}
-                    <a href="#" className="text-xl font-bold text-blue-600">SmartHub</a>
+                    <a href="#" className="text-xl font-bold text-primary">
+                        SmartHub
+                    </a>
 
-                    {/* Links */}
-                    <div className="space-x-6 hidden md:flex">
-                        <a href="#" className="text-gray-700 hover:text-blue-600">Home</a>
-                        <a href="#" className="text-gray-700 hover:text-blue-600">Shop</a>
-                        <a href="#" className="text-gray-700 hover:text-blue-600">Blog</a>
-                        <a href="#" className="text-gray-700 hover:text-blue-600">Contact us</a>
+                    {/* Desktop Links */}
+                    <div className="hidden md:flex space-x-6">
+                        <a href="#" className="text-gray-700 hover:text-primary">Home</a>
+                        <a href="#" className="text-gray-700 hover:text-primary">Shop</a>
+                        <a href="#" className="text-gray-700 hover:text-primary">Blog</a>
+                        <a href="#" className="text-gray-700 hover:text-primary">Contact</a>
                     </div>
 
-                    {/* Button */}
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                        Sign in
-                    </button>
+                    {/* Right Section */}
+                    <div className="flex items-center gap-4">
+                        {/* Cart Icon with Badge */}
+                        <div className="relative hidden sm:flex">
+                            <Button
+                                variant="outline"
+                                size="icon"
+                                className="hover:bg-primary hover:text-white"
+                            >
+                                <ShoppingCart size={18} />
+                            </Button>
+                            {cartCount > 0 && (
+                                <span className="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                  {cartCount}
+                </span>
+                            )}
+                        </div>
+
+                        {/* Sign in Button */}
+                        <Button className="bg-primary text-white hover:bg-primary/90">
+                            Sign in
+                        </Button>
+
+                        {/* Mobile Menu Button */}
+                        <button
+                            className="md:hidden text-gray-700 hover:text-primary"
+                            onClick={() => setIsOpen(!isOpen)}
+                        >
+                            {isOpen ? <X size={24} /> : <Menu size={24} />}
+                        </button>
+                    </div>
                 </div>
+
+                {/* Mobile Menu */}
+                {isOpen && (
+                    <div className="md:hidden bg-gray-50 border-t border-gray-200">
+                        <div className="flex flex-col items-center py-3 space-y-2">
+                            <a href="#" className="text-gray-700 hover:text-primary">Home</a>
+                            <a href="#" className="text-gray-700 hover:text-primary">Shop</a>
+                            <a href="#" className="text-gray-700 hover:text-primary">Blog</a>
+                            <a href="#" className="text-gray-700 hover:text-primary">Contact</a>
+                        </div>
+                    </div>
+                )}
             </nav>
+<span className="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+  {cartCount}
+</span>
         </>
     );
 }
 
-export default Header;

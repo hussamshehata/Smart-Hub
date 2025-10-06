@@ -2,7 +2,7 @@ import React from "react";
 import ProductButtons from "./ProductButtons";
 
 
-export default function ProductCard() {
+export default function productCard() {
   const products = [
     {
       id: 1,
