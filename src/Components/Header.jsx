@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Menu, X, ShoppingCart, Heart} from "lucide-react";
+import {Menu, X, ShoppingCart,} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 
