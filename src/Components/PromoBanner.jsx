@@ -6,7 +6,7 @@ function PromoBanner() {
                 <img src="Promo.jpg" alt="Promo"  className="w-full h-auto"/>
             </section>
 
-            <section className="w-1/2 flex flex-col bg-[#ffab0066] p-16">
+            <section className="w-full flex flex-col bg-[#ffab0066] p-16">
                 <p className="text-blue-600">PROMOTION</p>
                 <p className="text-[4rem]">Hurry up! 40% OFF</p>
                 <p className="font-bold">Enjoy up to offer on our best-selling products for a limited time only.</p>
