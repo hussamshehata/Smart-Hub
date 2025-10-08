@@ -1,23 +1,23 @@
 // src/App.jsx
 import React from "react";
 import ProductCard from "./Components/ProductCard.jsx";
-import Header from "./components/Header"
+import Navbar from "./Components/Navbar&Footer/Navbar.jsx"
 import GridSection from "@/Components/GridSection.jsx";
-import ThemeToggle from "@/Components/ThemeToggle.jsx";
-
+import ThemeToggle from "@/Components/All-Buttons/ThemeToggle.jsx";
+import Footer from "@/Components/Navbar&Footer/Footer.jsx"
 function App() {
     return (
         <GridSection>
 
             <div>
-                <Header/>
+                <Navbar/>
 
 <ThemeToggle/>
                 {/* other product details here */}
 
 
                 <ProductCard/>
-
+<Footer/>
             </div>
         </GridSection>
 

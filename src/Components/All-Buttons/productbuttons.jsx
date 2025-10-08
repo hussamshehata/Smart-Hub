@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/Components/All-Buttons/ui/button.jsx"
 import { ShoppingCart, Heart } from "lucide-react"
 
 export default function ProductButtons() {
