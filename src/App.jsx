@@ -19,7 +19,6 @@ function App() {
                 <HeroBanner/>
                 <Brands/>
 
-<ThemeToggle/>
                 {/* other product details here */}
 
 

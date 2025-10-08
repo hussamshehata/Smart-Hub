@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {Menu, X, ShoppingCart,} from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "../All-Buttons/ThemeToggle.jsx";
 
 
 export default function Navbar() {
@@ -21,6 +22,7 @@ export default function Navbar() {
                     <a href="#" className="text-xl font-bold text-primary">
                         SmartHub
                     </a>
+                    
 
                     {/* Desktop Links */}
                     <div className="hidden md:flex space-x-6">
@@ -53,6 +55,8 @@ export default function Navbar() {
                         <Button className= "me-2" variant="outline" size="default">
                             sign in
                         </Button>
+                        <ThemeToggle/>
+
 
                         {/* Mobile Menu Button */}
                         <button
