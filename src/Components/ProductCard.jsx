@@ -1,5 +1,5 @@
 import React from "react";
-import ProductButtons from "./ProductButtons";
+import ProductButtons from "./All-Buttons/productbuttons.jsx";
 
 
 export default function productCard() {

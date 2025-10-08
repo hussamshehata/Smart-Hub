@@ -1,41 +1,26 @@
 // src/App.jsx
 import React from "react";
-import ProductButtons from "@/components/ProductButtons"; // or "./components/ProductButtons" if you don't use @ alias
-import CheckoutDetails from "./pages/CheckoutDetails";
-import Home from "./pages/Home";
-
-
-
-
-function App() {
-    return (
-        <>
-            <CheckoutDetails />
-        </>
-import Shipping from "@/components/shippingForm";
-import ContactInformation from "@/components/ContactInformation";
 import ProductCard from "./Components/ProductCard.jsx";
-import Header from "./components/Header"
+import Navbar from "./Components/Navbar&Footer/Navbar.jsx"
 import GridSection from "@/Components/GridSection.jsx";
-import TrayTableProduct from "@/Components/cart.jsx";
-
+import ThemeToggle from "@/Components/All-Buttons/ThemeToggle.jsx";
+import Footer from "@/Components/Navbar&Footer/Footer.jsx"
 function App() {
     return (
         <GridSection>
 
-<div>
+            <div>
+                <Navbar/>
 
-            <Header/>
-            {/* other product details here */}
-            <ProductButtons />
-            <ContactInformation />
-            <Shipping />
-            <TrayTableProduct/>
+<ThemeToggle/>
+                {/* other product details here */}
 
 
-            <ProductCard/>
-</div>
+                <ProductCard/>
+<Footer/>
+            </div>
         </GridSection>
+
 
     );
 }
