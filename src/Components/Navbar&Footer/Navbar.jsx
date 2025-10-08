@@ -3,7 +3,7 @@ import {Menu, X, ShoppingCart,} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 
-export default function Header() {
+export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const [cartCount, ] = useState(2); // 👈 example number, later this can come from context or API
 

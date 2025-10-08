@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../Components/Header";
+import Navbar from "../Components/Navbar&Footer/Navbar.jsx";
 import ProductCard from "../components/ProductCard";
-import ProductButtons from "../components/ProductButtons";
+import ProductButtons from "../Components/All-Buttons/productbuttons.jsx";
 
 export default function Home() {
     return (
         <>
-            <Header />
+            <Navbar />
             <div className="p-8">
 
                 <h1 className="text-2xl font-heading mb-4">Product</h1>
