@@ -2,7 +2,7 @@ import React from "react";
 
 export default function PaymentForm() {
     return (
-        <div className="px-4 py-8 mt-8 ml-8 border border-black w-2/5">
+        <div className="px-4 py-8 mt-8 ml-8 border border-black shadow w-2/5">
             <form>
                 <h6 className="font-medium text-xl mb-4">Payment method</h6>
 
