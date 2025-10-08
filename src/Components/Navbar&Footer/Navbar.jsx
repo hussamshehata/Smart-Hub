@@ -17,7 +17,7 @@ export default function Navbar() {
 
             {/* Navbar */}
             <nav className="bg-white shadow-md">
-                <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+                <div className="max-w-7xl mx-auto  py-3 flex justify-between items-center">
                     {/* Logo */}
                     <a href="#" className="text-xl font-bold text-primary">
                         SmartHub
@@ -34,7 +34,7 @@ export default function Navbar() {
 
 
                     {/* Right Section */}
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-1">
                         {/* Cart Icon with Badge */}
                         <div className="relative hidden sm:flex">
                             <Button

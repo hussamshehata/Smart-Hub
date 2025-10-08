@@ -1,6 +1,6 @@
 function Brands() {
     return (
-        <div className="w-full">
+        <div className="w-full mt-16">
             <ul className="mx-8 list-none flex justify-between py-8 px-8 text-xl">
 
                 <li className="flex flex-row text-gray-500 text-xl">
