@@ -9,7 +9,7 @@ function Newsletter() {
 
                 <form className="text-2xl mb-8">
                     <input type="email" placeholder="Enter your email" className="p-2 w-80 border border-gray-400 bg-transparent rounded" />
-                    <button className="bg-transparent border border-gray-500 text-gray-600 px-4 py-2 rounded cursor-pointer">Signup</button>
+                    <button className="bg-transparent border border-gray-500 text-gray-600 px-4 ml-4 py-2 rounded cursor-pointer">Signup</button>
                 </form>
 
                  <hr />
@@ -17,7 +17,7 @@ function Newsletter() {
         </div>
     </div>
 
-     );
+    );
 }
 
 export default Newsletter;
