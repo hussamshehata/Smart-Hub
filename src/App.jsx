@@ -3,15 +3,7 @@ import React from "react";
 import ProductButtons from "@/components/ProductButtons"; // or "./components/ProductButtons" if you don't use @ alias
 import CheckoutDetails from "./pages/CheckoutDetails";
 import Home from "./pages/Home";
-
-
-
-
-function App() {
-    return (
-        <>
-            <CheckoutDetails />
-        </>
+import OrderSummary from "@/Components/OrderSummary.jsx";
 import Shipping from "@/components/shippingForm";
 import ContactInformation from "@/components/ContactInformation";
 import ProductCard from "./Components/ProductCard.jsx";
@@ -23,18 +15,19 @@ function App() {
     return (
         <GridSection>
 
-<div>
+            <div>
 
-            <Header/>
-            {/* other product details here */}
-            <ProductButtons />
-            <ContactInformation />
-            <Shipping />
-            <TrayTableProduct/>
+                <Header />
+                {/* other product details here */}
+                <ProductButtons />
+                <ContactInformation />
+                <Shipping />
+                <TrayTableProduct />
 
 
-            <ProductCard/>
-</div>
+                <ProductCard />
+                <OrderSummary />
+            </div>
         </GridSection>
 
     );
