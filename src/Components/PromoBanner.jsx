@@ -1,12 +1,12 @@
 function PromoBanner() {
     return (
-        <div className="flex">
+        <div className="flex mt-24">
 
-            <section className="left-side w-1/2">
+            <div className="left-side w-1/2 ">
                 <img src="Promo.jpg" alt="Promo"  className="w-full h-auto"/>
-            </section>
+            </div>
 
-            <section className="w-1/2 flex flex-col bg-[#ffab0066] p-16">
+            <div className="w-full flex flex-col bg-[#ffab0066] p-16">
                 <p className="text-blue-600">PROMOTION</p>
                 <p className="text-[4rem]">Hurry up! 40% OFF</p>
                 <p className="font-bold">Enjoy up to offer on our best-selling products for a limited time only.</p>
@@ -20,7 +20,7 @@ function PromoBanner() {
                     </ul>
                 </div>
                 <button className="bg-black text-white py-2 px-0 w-32 rounded-lg mt-8">Shop Now</button>
-            </section>
+            </div>
 
         </div>      
     );

@@ -1,8 +1,8 @@
 function Newsletter() {
   return (
-    <div className="newsletter bg-gray-200" >
+    <div className="newsletter  h-1/5 bg-[url('src/images/newsletter.jpg')] bg-cover  bg-center  bg-no-repeat  flex  flex-col  justify-center mt-24" >
 
-        <div className="newsletter">
+        <div className="newsletter ">
             <div className="flex flex-col items-center justify-center py-16">
                 <p className="text-5xl mb-4">Join Our Newsletter</p>
                 <p className="text-2xl mb-8">Sign up for deals, new products and promotions</p>
