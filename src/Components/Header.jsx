@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Menu, X, ShoppingCart } from "lucide-react";
+import {Menu, X, ShoppingCart,} from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
-    const [cartCount, ] = useState(3); // 👈 example number, later this can come from context or API
+    const [cartCount, ] = useState(2); // 👈 example number, later this can come from context or API
 
     return (
         <>
@@ -29,6 +30,7 @@ export default function Header() {
                         <a href="#" className="text-gray-700 hover:text-primary">Contact</a>
                     </div>
 
+
                     {/* Right Section */}
                     <div className="flex items-center gap-4">
                         {/* Cart Icon with Badge */}
@@ -36,7 +38,7 @@ export default function Header() {
                             <Button
                                 variant="outline"
                                 size="icon"
-                                className="hover:bg-primary hover:text-white"
+                                className="me-2"
                             >
                                 <ShoppingCart size={18} />
                             </Button>
@@ -48,8 +50,8 @@ export default function Header() {
                         </div>
 
                         {/* Sign in Button */}
-                        <Button className="bg-primary text-white hover:bg-primary/90">
-                            Sign in
+                        <Button className= "me-2" variant="outline" size="default">
+                            sign in
                         </Button>
 
                         {/* Mobile Menu Button */}
@@ -74,9 +76,7 @@ export default function Header() {
                     </div>
                 )}
             </nav>
-<span className="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
-  {cartCount}
-</span>
+
         </>
     );
 }
