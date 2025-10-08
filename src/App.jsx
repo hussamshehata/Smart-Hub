@@ -1,34 +1,37 @@
 // src/App.jsx
 import React from "react";
-import ProductButtons from "@/components/ProductButtons"; // or "./components/ProductButtons" if you don't use @ alias
-import CheckoutDetails from "./pages/CheckoutDetails";
-import Home from "./pages/Home";
-import OrderSummary from "@/Components/OrderSummary.jsx";
-import Shipping from "@/components/shippingForm";
-import ContactInformation from "@/components/ContactInformation";
 import ProductCard from "./Components/ProductCard.jsx";
-import Header from "./components/Header"
+import Navbar from "./Components/Navbar&Footer/Navbar.jsx"
 import GridSection from "@/Components/GridSection.jsx";
-import TrayTableProduct from "@/Components/cart.jsx";
+import ThemeToggle from "@/Components/All-Buttons/ThemeToggle.jsx";
+import Footer from "@/Components/Navbar&Footer/Footer.jsx"
 
+import HeroBanner from "./Components/HeroBanner.jsx";
+import Brands from "./Components/Brands.jsx";
+import PromoBanner from "./Components/promoBanner.jsx";
+import Newsletter from "./Components/Newsletter.jsx";
 function App() {
     return (
         <GridSection>
 
             <div>
+                <Navbar/>
+                <HeroBanner/>
+                <Brands/>
 
-                <Header />
+<ThemeToggle/>
                 {/* other product details here */}
-                <ProductButtons />
-                <ContactInformation />
-                <Shipping />
-                <TrayTableProduct />
 
 
-                <ProductCard />
-                <OrderSummary />
+                <ProductCard/>
+                <PromoBanner/>
+                <Newsletter/>
+
+                
+<Footer/>
             </div>
         </GridSection>
+
 
     );
 }

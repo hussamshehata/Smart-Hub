@@ -1,5 +1,5 @@
 import React from "react";
-import ProductButtons from "./ProductButtons";
+import ProductButtons from "./All-Buttons/productbuttons.jsx";
 
 
 export default function productCard() {
@@ -32,7 +32,7 @@ export default function productCard() {
 
   return (
         <section className="p-10">
-            <h1 className="text-center text-7xl mb-16">Best Seller </h1>
+            <h1 className="text-5xl mb-16 pt-32">Best Seller </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {products.map((product) => (
           <div
