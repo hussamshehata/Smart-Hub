@@ -10,6 +10,7 @@ import HeroBanner from "./Components/HeroBanner.jsx";
 import Brands from "./Components/Brands.jsx";
 import PromoBanner from "./Components/promoBanner.jsx";
 import Newsletter from "./Components/Newsletter.jsx";
+import Services from "./Components/Services.jsx";
 function App() {
     return (
         <GridSection>
@@ -25,6 +26,7 @@ function App() {
 
                 <ProductCard/>
                 <PromoBanner/>
+                <Services/>
                 <Newsletter/>
 
                 
