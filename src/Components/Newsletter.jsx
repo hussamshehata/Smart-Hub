@@ -1,6 +1,6 @@
 function Newsletter() {
   return (
-    <div className="newsletter bg-gray-200" >
+    <div className="newsletter bg-[url('src/assets/newsletter.jpg')]" >
 
         <div className="newsletter">
             <div className="flex flex-col items-center justify-center py-16">
