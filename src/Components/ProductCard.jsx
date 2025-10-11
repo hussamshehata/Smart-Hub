@@ -10,7 +10,7 @@ export default function productCard() {
       description: "High-quality sound with active noise cancellation.",
       price: 1499.99,
       image:
-        "public/Iphone.jpg",
+        "https://res.cloudinary.com/dmsvr8dnt/image/upload/v1760220178/Iphone_wulxcf.jpg",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function productCard() {
       description: "Track your fitness and stay connected on the go.",
       price: 149.99,
       image:
-        "public/smartwatch.jpg",
+        "https://res.cloudinary.com/dmsvr8dnt/image/upload/v1760220178/smartwatch_of3d0s.jpg",
     },
     {
       id: 3,
