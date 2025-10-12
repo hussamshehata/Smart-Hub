@@ -11,21 +11,21 @@ function App() {
     return (
 
 
-            <div>
-                <Navbar/>
-                <HeroBanner/>
-                <Brands/>
+        <div>
+            <Navbar />
+            <HeroBanner />
+            <Brands />
 
-                {/* other product details here */}
+            {/* other product details here */}
 
 
-                <ProductCard/>
-                <PromoBanner/>
-                <Newsletter/>
+            <ProductCard />
+            <PromoBanner />
+            <Newsletter />
 
-                
-<Footer/>
-            </div>
+
+            <Footer />
+        </div>
 
 
 
