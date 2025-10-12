@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/Components/All-Buttons/ui/card";
-import { Button } from "@/Components/All-Buttons/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
+import { Button } from "@/Components/ui/button";
 import { ShoppingCart } from "lucide-react";
 
 export default function ProductCard({ title, description, image }) {
