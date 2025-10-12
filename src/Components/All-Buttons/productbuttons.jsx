@@ -1,5 +1,5 @@
-import { Button } from "@/Components/All-Buttons/ui/button.jsx"
-import { ShoppingCart, Heart } from "lucide-react"
+import { Button } from "@/Components/ui/button.jsx"
+import { ShoppingCart, Heart,} from "lucide-react"
 
 export default function ProductButtons() {
     return (
@@ -8,6 +8,7 @@ export default function ProductButtons() {
                 <ShoppingCart size={22} className="me-2" />
                 Checkout
             </Button>
+
 
             <Button variant="outline" size="sm">
                 <Heart size={22} className="me-2" />
