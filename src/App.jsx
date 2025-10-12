@@ -1,36 +1,20 @@
-// src/App.jsx
-import React from "react";
-import ProductCard from "./Components/ProductCard.jsx";
-import Navbar from "./Components/Navbar&Footer/Navbar.jsx"
-import Footer from "@/Components/Navbar&Footer/Footer.jsx"
-import HeroBanner from "./Components/HeroBanner.jsx";
-import Brands from "./Components/Brands.jsx";
-import PromoBanner from "./Components/PromoBanner.jsx";
-import Newsletter from "./Components/Newsletter.jsx";
+import { Routes, Route } from "react-router-dom";
+import MainLayout from "./Layouts/MainLayouts.jsx";
+
+import Home from "./pages/Home";
+
+
 function App() {
     return (
+        <Routes>
+            {/* Layout Route */}
+            <Route path="/" element={<MainLayout />}>
+                {/* Child Routes (inside layout) */}
+                <Route index element={<Home />} />
 
-
-        <div>
-            <Navbar />
-            <HeroBanner />
-            <Brands />
-
-            {/* other product details here */}
-
-
-            <ProductCard />
-            <PromoBanner />
-            <Newsletter />
-
-
-            <Footer />
-        </div>
-
-
-
+            </Route>
+        </Routes>
     );
 }
 
 export default App;
-

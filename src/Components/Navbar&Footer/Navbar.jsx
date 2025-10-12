@@ -1,15 +1,16 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {Menu, X, ShoppingCart,} from "lucide-react";
-import { Button } from "@/Components/All-Buttons/ui/button";
+import { Button } from "@/Components/ui/button";
 import ThemeToggle from "../All-Buttons/ThemeToggle.jsx";
 import CartSidebar from "./Sidebar.jsx"
 
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const [cartCount, ] = useState(2); // 👈 example number, later this can come from context or API
+    const [cartCount, ] = useState(2); // example number, later this can come from context or API
     const [isCartOpen, setIsCartOpen] = React.useState(false);
-    
+
   const [cartItems, setCartItems] = React.useState([
     {
       id: 1,
@@ -57,17 +58,17 @@ export default function Navbar() {
             <nav className="bg-white shadow-md">
                 <div className="max-w-7xl mx-auto  py-3 flex justify-between items-center">
                     {/* Logo */}
-                    <a href="#" className="text-xl font-bold text-primary">
+                    <Link to="/" className="text-xl font-bold text-primary">
                         SmartHub
-                    </a>
-                    
+                    </Link>
+
 
                     {/* Desktop Links */}
                     <div className="hidden md:flex space-x-6">
-                        <a href="#" className="text-gray-700 hover:text-primary">Home</a>
-                        <a href="#" className="text-gray-700 hover:text-primary">Shop</a>
-                        <a href="#" className="text-gray-700 hover:text-primary">Blog</a>
-                        <a href="#" className="text-gray-700 hover:text-primary">Contact</a>
+                        <Link to="/" className="text-gray-700 hover:text-primary">Home</Link>
+                        <Link to="/shop" className="text-gray-700 hover:text-primary">Shop</Link>
+                        <Link to="/blog" className="text-gray-700 hover:text-primary">Blog</Link>
+                        <Link to="/contact" className="text-gray-700 hover:text-primary">Contact</Link>
                     </div>
 
 
@@ -113,10 +114,10 @@ export default function Navbar() {
                 {isOpen && (
                     <div className="md:hidden bg-gray-50 border-t border-gray-200">
                         <div className="flex flex-col items-center py-3 space-y-2">
-                            <a href="#" className="text-gray-700 hover:text-primary">Home</a>
-                            <a href="#" className="text-gray-700 hover:text-primary">Shop</a>
-                            <a href="#" className="text-gray-700 hover:text-primary">Blog</a>
-                            <a href="#" className="text-gray-700 hover:text-primary">Contact</a>
+                            <Link to="/" className="text-gray-700 hover:text-primary">Home</Link>
+                            <Link to="/shop" className="text-gray-700 hover:text-primary">Shop</Link>
+                            <Link to="/blog" className="text-gray-700 hover:text-primary">Blog</Link>
+                            <Link to="/contact" className="text-gray-700 hover:text-primary">Contact</Link>
                         </div>
                     </div>
                 )}
