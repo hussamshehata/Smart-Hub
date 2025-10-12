@@ -2,7 +2,7 @@
 function HeroBanner() {
     return (
         <section
-                className=" h-screen  bg-cover  bg-center  bg-no-repeat  flex  flex-col  justify-center " >
+                className=" h-screen  bg-[url('src/images/hero1.jpg')] bg-cover  bg-center  bg-no-repeat  flex  flex-col  justify-center " >
                 <div className="w-1/2 self-end px-5">
 
                     <h1 className="text-black text-5xl mb-5" >Welcome to Smart Hub !</h1>
