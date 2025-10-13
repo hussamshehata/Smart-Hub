@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-export default function NotFound() {
+export default function SpareNotFound() {
     return (
         <motion.div
             className="flex flex-col items-center justify-center min-h-screen text-center bg-background text-foreground"
