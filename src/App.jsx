@@ -7,7 +7,7 @@ import Blog from "./pages/Blog.jsx";
 import Contact from "./pages/Contact.jsx";
 import Login from "./pages/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
-import NotFound from "./pages/NotFound.jsx";
+import {EmptyInputGroup} from "./pages/NotFound.jsx";
 
 function App() {
     const location = useLocation();
@@ -20,7 +20,7 @@ function App() {
                     <Route path="shop" element={<Shop />} />
                     <Route path="blog" element={<Blog />} />
                     <Route path="contact" element={<Contact />} />
-                    <Route path="*" element={<NotFound />} />
+                    <Route path="*" element={<EmptyInputGroup />} />
 
                 </Route>
 
