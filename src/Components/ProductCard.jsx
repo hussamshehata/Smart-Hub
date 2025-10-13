@@ -1,5 +1,6 @@
 import React from "react";
 import ProductButtons from "./All-Buttons/productbuttons.jsx";
+import { Link } from "react-router-dom";
 
 
 export default function productCard() {
@@ -39,13 +40,16 @@ export default function productCard() {
             key={product.id}
             className="bg-gradient-to-br from-neutral-150 to-neutral-200 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
           >
-            <div className="relative overflow-hidden rounded-t-2xl">
+           <Link
+              to={`/product/${product.id}`}
+              className="relative overflow-hidden rounded-t-2xl"
+            >
               <img
                 src={product.image}
                 alt={product.name}
                 className="w-full h-96 object-cover"
               />
-            </div>
+            </Link>
 
             <div className="p-5">
               <h3 className="text-lg font-semibold mb-1 text-neutral-700">
