@@ -1,6 +1,6 @@
 import React from "react";
-import GridSection from "@/components/GridSection";
-import ProductCard from "@/components/ProductCard";
+import GridSection from "@/Components/GridSection.jsx";
+import ProductCard from "@/Components/ProductCard.jsx";
 
 export default function ProductsPage() {
     const products = [
