@@ -1,19 +1,34 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import MainLayout from "./Layouts/MainLayouts.jsx";
-
-import Home from "./pages/Home";
-
+import Home from "./pages/Home.jsx";
+import Shop from "./pages/Shop.jsx";
+import Blog from "./pages/Blog.jsx";
+import Contact from "./pages/Contact.jsx";
+import Login from "./pages/Login.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 function App() {
-    return (
-        <Routes>
-            {/* Layout Route */}
-            <Route path="/" element={<MainLayout />}>
-                {/* Child Routes (inside layout) */}
-                <Route index element={<Home />} />
+    const location = useLocation();
 
-            </Route>
-        </Routes>
+    return (
+        <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+                <Route path="/" element={<MainLayout />}>
+                    <Route index element={<Home />} />
+                    <Route path="shop" element={<Shop />} />
+                    <Route path="blog" element={<Blog />} />
+                    <Route path="contact" element={<Contact />} />
+                    <Route path="*" element={<NotFound />} />
+
+                </Route>
+
+                {/* Routes without layout */}
+                <Route path="/login" element={<Login />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+            </Routes>
+        </AnimatePresence>
     );
 }
 
