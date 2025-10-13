@@ -37,7 +37,7 @@ export default function productCard() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="bg-gradient-to-br from-gray-150 to-gray-200 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
+            className="bg-gradient-to-br from-neutral-150 to-neutral-200 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
           >
             <div className="relative overflow-hidden rounded-t-2xl">
               <img
@@ -48,15 +48,15 @@ export default function productCard() {
             </div>
 
             <div className="p-5">
-              <h3 className="text-lg font-semibold mb-1 text-gray-800">
+              <h3 className="text-lg font-semibold mb-1 text-neutral-700">
                 {product.name}
               </h3>
-              <p className="text-sm text-gray-500 mb-4 line-clamp-2">
+              <p className="text-sm text-neutral-500 mb-4 line-clamp-2">
                 {product.description}
               </p>
 
               <div className="flex items-center justify-between">
-                <span className="text-2xl font-bold text-black">
+                <span className="text-lg font-bold text-neutral-700">
                   ${product.price}
                 </span>
                 <ProductButtons />
