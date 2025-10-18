@@ -8,6 +8,7 @@ import Contact from "./pages/Contact.jsx";
 import Login from "./pages/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
+import ShoppingCartPage from "./pages/ShoppingCartPage.jsx";
 
 function App() {
     const location = useLocation();
@@ -21,6 +22,8 @@ function App() {
                     <Route path="blog" element={<Blog />} />
                     <Route path="contact" element={<Contact />} />
                     <Route path="product/:id" element={<ProductDetails />} />
+                    <Route path="cart" element={<ShoppingCartPage />} />
+
 
 
 
