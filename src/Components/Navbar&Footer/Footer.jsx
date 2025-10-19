@@ -1,3 +1,6 @@
+import {Link} from "react-router-dom";
+import React from "react";
+
 export default function Footer() {
     return (
         <footer className="bg-[#111] text-gray-300 py-10 px-6 md:px-16">
@@ -11,11 +14,11 @@ export default function Footer() {
 
                 {/* Navigation */}
                 <ul className="flex flex-wrap gap-6 text-sm">
-                    <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
-                    <li><a href="#" className="hover:text-white transition-colors">Shop</a></li>
-                    <li><a href="#" className="hover:text-white transition-colors">Product</a></li>
-                    <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-                    <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+                    <Link to="/" className="text-white hover:text-primary">Home</Link>
+                    <Link to="/shop" className="text-white hover:text-primary">Shop</Link>
+                    <Link to="/blog" className="text-white hover:text-primary">Blog</Link>
+                    <Link to="/Product" className="text-white hover:text-primary">Product</Link>
+                    <Link to="/contact" className="text-white hover:text-primary">Contact</Link>
                 </ul>
             </div>
 

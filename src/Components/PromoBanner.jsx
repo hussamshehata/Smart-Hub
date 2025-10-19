@@ -3,7 +3,7 @@ function PromoBanner() {
         <div className="flex mt-24">
 
             <div className="left-side w-1/2 h-full">
-                <img src="src/images/promo.jpg" alt="Promo"  className="w-full h-1/5 object-cover"/>
+                <img src="../assets/images/promo.jpg" alt="Promo" className="w-full h-1/5 object-cover"/>
             </div>
 
             <div className="w-1/2 flex flex-col bg-[#ffab0066] p-16">

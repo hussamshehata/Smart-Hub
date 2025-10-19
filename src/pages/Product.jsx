@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function Blog() {
+export default function Product() {
     return (
         <motion.div
             className="p-6"
@@ -9,8 +9,8 @@ export default function Blog() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
         >
-            <h1 className="text-3xl font-bold mb-2">Blog</h1>
-            <p className="text-gray-500">Latest updates and news here.</p>
+            <h1 className="text-3xl font-bold mb-2">Product page</h1>
+            <p className="text-gray-500">hello to product.</p>
         </motion.div>
     );
 }
