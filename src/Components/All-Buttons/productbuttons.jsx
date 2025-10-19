@@ -6,7 +6,7 @@ export default function ProductButtons() {
         <div className="flex items-center gap-2 mt-2">
             <Button variant="default" size="sm">
                 <ShoppingCart size={22} className="me-2" />
-                Checkout
+                Add to cart
             </Button>
 
 
