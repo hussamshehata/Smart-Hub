@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 
 import HeroBanner from "@/Components/HeroBanner";
 import Brands from "@/Components/Brands";
+import ShopCollection from "@/Components/ShopCollection";
 import PromoBanner from "@/Components/PromoBanner";
 import Services from "@/Components/Services";
 import InstagramFeed from "@/Components/InstagramFeed";
@@ -17,6 +19,7 @@ export default function Home() {
         >
             <HeroBanner />
             <Brands />
+            <ShopCollection />
             <PromoBanner />
             <Services />
             <InstagramFeed />
