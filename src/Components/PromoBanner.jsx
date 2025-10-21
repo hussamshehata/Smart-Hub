@@ -1,25 +1,26 @@
+import { Button } from "./ui/button";
 function PromoBanner() {
     return (
-        <div className="flex mt-24">
+        <div className="flex w-full">
 
-            <div className="left-side w-1/2 h-full">
-                <img src="https://res.cloudinary.com/dbaqz7nim/image/upload/v1760886151/promo_bchqyq.jpg" alt="Promo" className="w-full h-1/5 object-cover"/>
+            <div className="w-1/2">
+                <img src="https://res.cloudinary.com/dbaqz7nim/image/upload/v1760886151/promo_bchqyq.jpg" alt="Promo" className="w-full h-full object-cover"/>
             </div>
 
-            <div className="w-1/2 flex flex-col bg-[#ffab0066] p-16">
-                <p className="text-blue-600">PROMOTION</p>
-                <p className="text-[4rem]">Hurry up! 40% OFF</p>
-                <p className="font-bold">Enjoy up to offer on our best-selling products for a limited time only.</p>
-                <div>
-                    <p className="mt-8 mb-4 ">Offer expires in :</p>
+            <div className="flex flex-col justify-center gap-4 w-1/2 bg-[#ffab0066] px-20 ">
+                <p className="text-primary-600 font-bold">PROMOTION</p>
+                <h2 className="text-neutral-700 text-4xl font-bold">Hurry up! 40% OFF</h2>
+                <p className="text-neutral-700 text-1xl font-bold">Enjoy up to offer on our best-selling products for a limited time only.</p>
+                <div className="text-neutral-700">
+                    <p className="mb-2">Offer expires in :</p>
                     <ul className="list-none flex gap-4">
-                        <li className="flex flex-col justify-center items-center gap-2 w-12 mr-4"><span className="w-18 bg-white p-4 text-[2rem] block">02</span>Days</li>
-                        <li className="flex flex-col justify-center items-center gap-2 w-12 mr-4"><span className="w-18 bg-white p-4 text-[2rem] block">12</span>Hours</li>
-                        <li className="flex flex-col justify-center items-center gap-2 w-12 mr-4"><span className="w-18 bg-white p-4 text-[2rem] block">45</span>Minutes</li>
-                        <li className="flex flex-col justify-center items-center gap-2 w-12 mr-4"><span className="w-18 bg-white p-4 text-[2rem] block">05</span>Seconds</li>
+                        <li className="flex flex-col justify-center items-center gap-2"><span className=" bg-white p-4 text-4xl">02</span>Days</li>
+                        <li className="flex flex-col justify-center items-center gap-2"><span className=" bg-white p-4 text-4xl">12</span>Hours</li>
+                        <li className="flex flex-col justify-center items-center gap-2"><span className=" bg-white p-4 text-4xl">45</span>Minutes</li>
+                        <li className="flex flex-col justify-center items-center gap-2"><span className=" bg-white p-4 text-4xl">05</span>Seconds</li>
                     </ul>
                 </div>
-                <button className="bg-black text-white py-2 px-0 w-32 rounded-lg mt-8">Shop Now</button>
+                <Button variant="blacky" size="default" className="w-40">Shop Now</Button>
             </div>
 
         </div>      
