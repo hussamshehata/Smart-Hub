@@ -8,7 +8,7 @@ import Contact from "./pages/Contact.jsx";
 import Login from "./pages/Auth/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
-import store from "./redux/store.js";
+
 
 function App() {
     const location = useLocation();
