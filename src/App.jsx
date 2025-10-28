@@ -5,7 +5,7 @@ import Home from "./pages/Home.jsx";
 import Shop from "./pages/Shop.jsx";
 import Product from "./pages/Product.jsx";
 import Contact from "./pages/Contact.jsx";
-import Login from "./pages/Login.jsx";
+import Login from "./pages/Auth/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
 
@@ -22,6 +22,7 @@ function App() {
                     <Route path="Product" element={<Product />} />
                     <Route path="contact" element={<Contact />} />
                     <Route path="product/:id" element={<ProductDetails />} />
+
 
 
 

@@ -150,9 +150,12 @@ export default function Navbar() {
                         </button>
 
                         {/* User */}
-                        <button className="flex items-center justify-center text-gray-600 hover:text-black transition-all duration-200">
+                        <Link
+                            to="/login"
+                            className="flex items-center justify-center text-gray-600 hover:text-black transition-all duration-200"
+                        >
                             <User size={20} />
-                        </button>
+                        </Link>
 
                         {/* Cart */}
                         <div className="relative flex items-center justify-center">
