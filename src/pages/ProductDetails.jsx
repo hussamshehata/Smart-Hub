@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Heart, Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import ProductCarousel from '@/Components/ProductCarousel';
 
 export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState('black');
@@ -231,5 +232,6 @@ export default function ProductDetails() {
           </div>
         </div>
       </div>
+      <ProductCarousel/>
     </div>
   ); }
