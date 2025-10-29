@@ -10,15 +10,15 @@ export default function Contact() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.4 }}
         >
-            <div className="mx-[7rem] pt-6">
+            <div className="sm:px-8 md:mx-[4rem] lg:mx-[7rem] pt-6">
                 {/* About Us */}
                 <div className="space-y-8">
                     <div className="w-3xl">
-                        <h3 className="text-5xl font-medium">
+                        <h3 className="text-3xl sm:text-4xl lg:text-5xl font-medium">
                             We believe in smarter choices. We're passionate about modern technology.
                         </h3>
 
-                        <p className="mt-8">
+                        <p className="mt-8 text-sm sm:text-base">
                             Our store brings you the latest smartphones, high-quality headphones, and
                             innovative smartwatches from trusted global brands. We carefully select every
                             product to offer performance, design, and reliability that fit your lifestyle.
@@ -28,10 +28,10 @@ export default function Contact() {
                         </p>
                     </div>
 
-                    <div className="flex w-full">
-                        <img src="" alt="About Us" className="w-1/2 object-cover" />
+                    <div className="flex flex-col lg:flex-row w-full">
+                        <img src="" alt="About Us" className="w-full lg:w-1/2 object-cover" />
 
-                        <div className="flex flex-col justify-center px-8 py-[60px] w-1/2 bg-neutral-100">
+                        <div className="flex flex-col justify-center px-8 py-10 lg:py-[60px] lg:w-1/2 w-full lg:w-1/2 bg-neutral-100">
                             <h4 className="text-4xl font-medium">About Us</h4>
                             <p className="text-base font-normal pt-4 pb-2">
                                 Smart-Hub is a trusted online store based in Egypt, specializing in smartphones,
@@ -54,8 +54,8 @@ export default function Contact() {
                 <div className="mt-8">
                     <h4 className="text-4xl font-medium text-center mb-8">Contact Us</h4>
 
-                    <div className="flex gap-6 pb-4">
-                        <div className="flex flex-col items-center w-1/3 h-[150px] bg-neutral-100 text-center p-2">
+                    <div className="flex flex-col md:flex-row gap-6 pb-4">
+                        <div className="flex flex-col items-center md:w-1/3 h-[150px] bg-neutral-100 text-center p-2">
                             <div className="py-2">
                                 <Store size={30} />
                             </div>
@@ -65,7 +65,7 @@ export default function Contact() {
                             </p>
                         </div>
 
-                        <div className="flex flex-col items-center w-1/3 h-[150px] bg-neutral-100 text-center p-2">
+                        <div className="flex flex-col items-center md:w-1/3 h-[150px] bg-neutral-100 text-center p-2">
                             <div className="py-2">
                                 <Phone size={30} />
                             </div>
@@ -73,7 +73,7 @@ export default function Contact() {
                             <p className="pt-1 text-base font-semibold">+84 234 567 890</p>
                         </div>
 
-                        <div className="flex flex-col items-center w-1/3 h-[150px] bg-neutral-100 text-center p-2">
+                        <div className="flex flex-col items-center md:w-1/3 h-[150px] bg-neutral-100 text-center p-2">
                             <div className="py-2">
                                 <Mail size={30} />
                             </div>
@@ -83,8 +83,8 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="flex mb-6">
-                        <div className="w-1/2">
+                    <div className="flex flex-col lg:flex-row gap-6 mb-6">
+                        <div className="w-full lg:w-1/2">
                             <form>
                                 <div className="flex flex-col mb-6 w-5/6">
                                     <label
@@ -145,7 +145,7 @@ export default function Contact() {
                             </form>
                         </div>
 
-                        <div className="w-1/2">
+                        <div className="w-full lg:w-1/2">
                             <img src="src/assets/map.jpg" alt="map" />
                         </div>
                     </div>
@@ -153,24 +153,24 @@ export default function Contact() {
             </div>
 
             {/* Footer */}
-            <div className="flex justify-between bg-neutral-100 w-full py-[3rem] px-[10rem]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 bg-neutral-100 w-full py-[3rem] px-6 sm:px-[4rem] lg:px-[10rem] text-center lg:text-left ">
                 <div>
-                    <Truck size={45} absoluteStrokeWidth />
+                    <Truck size={45} absoluteStrokeWidth className="mx-auto lg:mx-0" />
                     <p className="font-medium text-xl pt-2">Free Shipping</p>
                     <p className="text-sm font-normal text-neutral-500">Order above $200</p>
                 </div>
                 <div>
-                    <Banknote size={45} absoluteStrokeWidth />
+                    <Banknote size={45} absoluteStrokeWidth className="mx-auto lg:mx-0" />
                     <p className="font-medium text-xl pt-2">Money-back</p>
                     <p className="text-sm font-normal text-neutral-500">30 days guarantee</p>
                 </div>
                 <div>
-                    <LockKeyhole size={45} absoluteStrokeWidth />
+                    <LockKeyhole size={45} absoluteStrokeWidth className="mx-auto lg:mx-0" />
                     <p className="font-medium text-xl pt-2">Secure Payments</p>
                     <p className="text-sm font-normal text-neutral-500">Secured by Stripe</p>
                 </div>
                 <div>
-                    <Phone size={45} absoluteStrokeWidth />
+                    <Phone size={45} absoluteStrokeWidth className="mx-auto lg:mx-0" />
                     <p className="font-medium text-xl pt-2">24/7 Support</p>
                     <p className="text-sm font-normal text-neutral-500">Phone and Email support</p>
                 </div>
