@@ -3,7 +3,7 @@ import { ShoppingBag } from "lucide-react";
 import { useSelector } from "react-redux";
 import { Button } from "@/Components/ui/button.jsx";
 import CartSidebar from "./Sidebar.jsx";
-import { selectCartTotalQuantity } from "@/redux/Cartslice.js";
+import { selectCartTotalQuantity } from "@/redux/CartSlice.js";
 
 export default function Menucart() {
   // Get cart count from Redux store
