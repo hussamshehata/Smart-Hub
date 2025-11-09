@@ -78,14 +78,24 @@ export default function CartSidebar({ isOpen, onClose }) {
               <div className="space-y-4">
                 {cartItems.map(item => (
                   <div key={item.id} className="flex gap-4 pb-4 border-b">
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="w-20 h-20 object-cover rounded"
-                    />
+                     <div className="w-20 h-20  rounded flex items-center justify-center text-3xl flex-shrink-0">
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          className={`object-cover w-full h-full rounded`}
+                        />
+                      </div>
                     <div className="flex-1">
                       <div className="flex justify-between items-start mb-2">
-                        <h3 className="font-medium text-gray-900">{item.name}</h3>
+                        <div>
+                          <h3 className="font-medium text-gray-900">{item.name}</h3>
+                          {item.color && (
+                            <p className="text-xs text-gray-500">Color: {item.color}</p>
+                          )}
+                          {item.size && (
+                            <p className="text-xs text-gray-500">Size: {item.size}</p>
+                          )}
+                        </div>
                         <button
                           onClick={() => removeItem(item.id)}
                           className="text-gray-400 hover:text-red-500 transition-colors"
@@ -131,11 +141,14 @@ export default function CartSidebar({ isOpen, onClose }) {
                 <span>Total</span>
                 <span>${subtotal.toFixed(2)}</span>
               </div>
-              <button className="w-full bg-black text-white py-3 rounded-md font-medium hover:bg-gray-800 transition-colors">
+              <button 
+                onClick={handleCheckout}
+                className="w-full bg-black text-white py-3 rounded-md font-medium hover:bg-gray-800 transition-colors"
+              >
                 Checkout
               </button>
               <button
-                onClick={onClose}
+                onClick={handleViewCart}
                 className="w-full border border-gray-300 py-3 rounded-md font-medium hover:bg-gray-50 transition-colors"
               >
                 View Cart
