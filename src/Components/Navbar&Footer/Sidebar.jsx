@@ -1,7 +1,43 @@
 import { X, ShoppingCart, Plus, Minus, Trash2 } from 'lucide-react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import {
+  selectCartItems,
+  selectCartTotalPrice,
+  removeFromCart,
+  increaseQuantity,
+  decreaseQuantity,
+} from '@/redux/cartSlice';
 
-export default function CartSidebar({ isOpen, onClose, cartItems, updateQuantity, removeItem }) {
-  const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+export default function CartSidebar({ isOpen, onClose }) {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  
+  // Get cart data from Redux store
+  const cartItems = useSelector(selectCartItems);
+  const subtotal = useSelector(selectCartTotalPrice);
+
+  const updateQuantity = (id, delta) => {
+    if (delta > 0) {
+      dispatch(increaseQuantity(id));
+    } else {
+      dispatch(decreaseQuantity(id));
+    }
+  };
+
+  const removeItem = (id) => {
+    dispatch(removeFromCart(id));
+  };
+
+  const handleViewCart = () => {
+    onClose();
+    navigate('/cart'); // Update this path to match your cart page route
+  };
+
+  const handleCheckout = () => {
+    onClose();
+    navigate('/checkout'); // Update this path to match your checkout page route
+  };
 
   return (
     <>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Minus, Plus, X } from 'lucide-react';
-import { Input } from '@/components/ui/input';
+import { Button } from "@/Components/ui/button.jsx";
+import { Input } from '@/Components/ui/input.jsx';
+import { decreaseQuantity, increaseQuantity, removeFromCart, selectCartItems, selectCartTotalPrice, selectCouponCode, selectShippingCost, selectShippingMethod, setCouponCode, setShippingMethod } from '@/redux/cartSlice';
 
 
 
