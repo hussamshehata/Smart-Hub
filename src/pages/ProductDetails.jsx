@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useDispatch } from 'react-redux';
-import { addToCart } from '@/redux/Cartslice';
+import { addToCart } from '@/redux/cartSlice';
 import { useParams, useNavigate } from 'react-router-dom';
 import ProductCarousel from '@/Components/ProductCarousel.jsx';
 
