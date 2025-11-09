@@ -1,43 +1,7 @@
 import { X, ShoppingCart, Plus, Minus, Trash2 } from 'lucide-react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-import {
-  selectCartItems,
-  selectCartTotalPrice,
-  removeFromCart,
-  increaseQuantity,
-  decreaseQuantity,
-} from '@/redux/Cartslice';
 
-export default function CartSidebar({ isOpen, onClose }) {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-  
-  // Get cart data from Redux store
-  const cartItems = useSelector(selectCartItems);
-  const subtotal = useSelector(selectCartTotalPrice);
-
-  const updateQuantity = (id, delta) => {
-    if (delta > 0) {
-      dispatch(increaseQuantity(id));
-    } else {
-      dispatch(decreaseQuantity(id));
-    }
-  };
-
-  const removeItem = (id) => {
-    dispatch(removeFromCart(id));
-  };
-
-  const handleViewCart = () => {
-    onClose();
-    navigate('/cart'); // Update this path to match your cart page route
-  };
-
-  const handleCheckout = () => {
-    onClose();
-    navigate('/checkout'); // Update this path to match your checkout page route
-  };
+export default function CartSidebar({ isOpen, onClose, cartItems, updateQuantity, removeItem }) {
+  const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
     <>
@@ -78,24 +42,14 @@ export default function CartSidebar({ isOpen, onClose }) {
               <div className="space-y-4">
                 {cartItems.map(item => (
                   <div key={item.id} className="flex gap-4 pb-4 border-b">
-                     <div className="w-20 h-20  rounded flex items-center justify-center text-3xl flex-shrink-0">
-                        <img
-                          src={item.image}
-                          alt={item.name}
-                          className={`object-cover w-full h-full rounded`}
-                        />
-                      </div>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-20 h-20 object-cover rounded"
+                    />
                     <div className="flex-1">
                       <div className="flex justify-between items-start mb-2">
-                        <div>
-                          <h3 className="font-medium text-gray-900">{item.name}</h3>
-                          {item.color && (
-                            <p className="text-xs text-gray-500">Color: {item.color}</p>
-                          )}
-                          {item.size && (
-                            <p className="text-xs text-gray-500">Size: {item.size}</p>
-                          )}
-                        </div>
+                        <h3 className="font-medium text-gray-900">{item.name}</h3>
                         <button
                           onClick={() => removeItem(item.id)}
                           className="text-gray-400 hover:text-red-500 transition-colors"
@@ -141,14 +95,11 @@ export default function CartSidebar({ isOpen, onClose }) {
                 <span>Total</span>
                 <span>${subtotal.toFixed(2)}</span>
               </div>
-              <button 
-                onClick={handleCheckout}
-                className="w-full bg-black text-white py-3 rounded-md font-medium hover:bg-gray-800 transition-colors"
-              >
+              <button className="w-full bg-black text-white py-3 rounded-md font-medium hover:bg-gray-800 transition-colors">
                 Checkout
               </button>
               <button
-                onClick={handleViewCart}
+                onClick={onClose}
                 className="w-full border border-gray-300 py-3 rounded-md font-medium hover:bg-gray-50 transition-colors"
               >
                 View Cart

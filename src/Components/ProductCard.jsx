@@ -1,11 +1,10 @@
 // src/Components/ProductCard.jsx
-import React, { useEffect } from "react";
+import React from "react";
 import ProductButtons from "./All-Buttons/productbuttons.jsx";
 import { Link } from "react-router-dom";
 
 export default function ProductCard({ view, sortOption }) {
- 
- const products = [
+  const products = [
     {
       id: 1,
       name: "IPHONE 17 Pro Max",
@@ -30,60 +29,7 @@ export default function ProductCard({ view, sortOption }) {
       image:
         "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
     },
-    {
-      id: 4,
-      name: "Wireless Earbuds",
-      description: "Premium sound quality with ergonomic design.",
-      price: 199.99,
-      image:
-        "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 5,
-      name: "Laptop Stand",
-      description: "Adjustable aluminum stand for better posture.",
-      price: 49.99,
-      image:
-        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 6,
-      name: "Mechanical Keyboard",
-      description: "RGB backlit keyboard with tactile switches.",
-      price: 129.99,
-      image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 7,
-      name: "USB-C Hub",
-      description: "Multi-port hub with HDMI and USB 3.0 ports.",
-      price: 39.99,
-      image:
-        "https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 8,
-      name: "Webcam HD",
-      description: "1080p webcam with built-in microphone.",
-      price: 89.99,
-      image:
-        "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 9,
-      name: "Gaming Mouse",
-      description: "High-precision optical sensor with RGB lighting.",
-      price: 59.99,
-      image:
-        "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=600&q=80",
-    },
   ];
-
-   useEffect(() => {
-      localStorage.setItem("products", JSON.stringify(products));
-  }, []);
-
   const sortedProducts = [...products].sort((a, b) => {
     switch (sortOption) {
       case "Price: Low to High":
@@ -104,10 +50,6 @@ export default function ProductCard({ view, sortOption }) {
       : view === "grid2"
       ? "grid-cols-2"
       : "grid-cols-3";
-
-
-
-        
 
   return (
     <section className=" mt-24">
@@ -147,7 +89,7 @@ export default function ProductCard({ view, sortOption }) {
                 <span className="text-lg font-bold text-muted-700">
                   ${product.price}
                 </span>
-                <ProductButtons product={product} />
+                <ProductButtons />
               </div>
             </div>
           </div>
