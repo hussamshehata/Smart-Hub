@@ -7,7 +7,7 @@ import {
   removeFromCart,
   increaseQuantity,
   decreaseQuantity,
-} from '@/redux/CartSlice.js';
+} from '@/redux/Cartslice';
 
 export default function CartSidebar({ isOpen, onClose }) {
   const dispatch = useDispatch();

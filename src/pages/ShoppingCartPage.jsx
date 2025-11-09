@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Minus, Plus, X } from 'lucide-react';
 import { Button } from "@/Components/ui/button.jsx";
 import { Input } from '@/Components/ui/input.jsx';
-import { decreaseQuantity, increaseQuantity, removeFromCart, selectCartItems, selectCartTotalPrice, selectCouponCode, selectShippingCost, selectShippingMethod, setCouponCode, setShippingMethod } from '@/redux/CartSlice.js';
+import { decreaseQuantity, increaseQuantity, removeFromCart, selectCartItems, selectCartTotalPrice, selectCouponCode, selectShippingCost, selectShippingMethod, setCouponCode, setShippingMethod } from '@/redux/Cartslice';
 
 
 

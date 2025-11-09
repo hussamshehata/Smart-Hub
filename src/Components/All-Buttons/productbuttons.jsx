@@ -1,5 +1,5 @@
 import { Button } from "@/Components/ui/button.jsx"
-import { addToCart } from "@/redux/CartSlice.js";
+import { addToCart } from "@/redux/Cartslice";
 import { ShoppingCart, Heart,} from "lucide-react"
 import { useDispatch } from "react-redux";
 
