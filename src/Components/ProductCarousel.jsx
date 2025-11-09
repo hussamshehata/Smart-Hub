@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Heart, ChevronRight, Star } from 'lucide-react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
+import { Button } from "@/Components/ui/button.jsx";
 import { addToCart } from '@/redux/Cartslice';
 
 export default function ProductCarousel() {
