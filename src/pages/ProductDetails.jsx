@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { Heart, Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '@/redux/cartSlice';
+import { useParams, useNavigate } from 'react-router-dom';
+import ProductCarousel from '@/Components/ProductCarousel.jsx';
 
 export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState('black');

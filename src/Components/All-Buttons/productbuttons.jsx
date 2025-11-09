@@ -1,4 +1,5 @@
 import { Button } from "@/Components/ui/button.jsx"
+import { addToCart } from "@/redux/cartSlice";
 import { ShoppingCart, Heart,} from "lucide-react"
 
 export default function ProductButtons() {

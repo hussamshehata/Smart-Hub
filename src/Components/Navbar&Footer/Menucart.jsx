@@ -4,6 +4,7 @@ import { Menu, X, ShoppingCart } from "lucide-react";
 import { Button } from "@/Components/ui/button";
 import ThemeToggle from "../All-Buttons/ThemeToggle.jsx";
 import CartSidebar from "./Sidebar.jsx";
+import { selectCartTotalQuantity } from "@/redux/cartSlice";
 
 export default function Menucart() {
   const [cartCount] = useState(2); // example number, later this can come from context or API
