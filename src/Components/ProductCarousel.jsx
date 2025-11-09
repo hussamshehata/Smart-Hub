@@ -3,7 +3,7 @@ import { Heart, ChevronRight, Star } from 'lucide-react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Button } from "@/Components/ui/button.jsx";
-import { addToCart } from '@/redux/Cartslice';
+import { addToCart } from '@/redux/cartSlice';
 
 export default function ProductCarousel() {
   const [products, setProducts] = useState([]);
