@@ -1,75 +1,69 @@
 import React from "react";
-import BlogCard from "./BlogCard";
+import BlogPost from "./BlogPost.jsx";
 
 const BlogList = () => {
     const blogs = [
         {
             image:
-                "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=900&q=80",
-            title: "7 ways to decor your home like a professional",
+                "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80",
+            title: "Top 7 flagship smartphones of 2025 you must try",
             date: "October 19, 2023",
         },
         {
             image:
-                "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=900&q=80",
-            title: "Inside a beautiful kitchen organization",
+                "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=900&q=80",
+            title: "Best wireless headphones for noise cancellation",
             date: "October 18, 2023",
         },
         {
             image:
-                "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80",
-            title: "Decor your bedroom for your children",
+                "https://images.unsplash.com/photo-1518444022911-88f7fdb828a6?auto=format&fit=crop&w=900&q=80",
+            title: "Smartwatch fitness features: What you need to know",
             date: "October 16, 2023",
         },
         {
             image:
-                "https://images.unsplash.com/photo-1600607687920-4e3b3e0d09c8?auto=format&fit=crop&w=900&q=80",
-            title:
-                "Modern texas home is beautiful and completely kid-friendly",
+                "https://images.unsplash.com/photo-1605451235992-e5f96f9483cf?auto=format&fit=crop&w=900&q=80",
+            title: "How to pick the perfect smartphone camera",
             date: "October 14, 2023",
         },
         {
             image:
-                "https://images.unsplash.com/photo-1598300186201-494e0c7c7b3f?auto=format&fit=crop&w=900&q=80",
-            title:
-                "Modern texas home is beautiful and completely kid-friendly",
+                "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?auto=format&fit=crop&w=900&q=80",
+            title: "Top gaming smartphones under $500",
             date: "October 14, 2023",
         },
         {
             image:
-                "https://images.unsplash.com/photo-1616486029485-3f7e0a4c5f79?auto=format&fit=crop&w=900&q=80",
-            title:
-                "Modern texas home is beautiful and completely kid-friendly",
+                "https://images.unsplash.com/photo-1511715281313-95591a1cc68e?auto=format&fit=crop&w=900&q=80",
+            title: "Wireless earbuds vs headphones—Which should you buy?",
             date: "October 14, 2023",
         },
         {
             image:
-                "https://images.unsplash.com/photo-1616596874497-cd39e2b08d67?auto=format&fit=crop&w=900&q=80",
-            title:
-                "Modern texas home is beautiful and completely kid-friendly",
+                "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
+            title: "Top smartwatch brands for health tracking",
             date: "October 14, 2023",
         },
         {
             image:
-                "https://images.unsplash.com/photo-1618221516305-31a5c7c9af93?auto=format&fit=crop&w=900&q=80",
-            title:
-                "Modern texas home is beautiful and completely kid-friendly",
+                "https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=900&q=80",
+            title: "How to improve battery life on your phone",
             date: "October 14, 2023",
         },
         {
             image:
-                "https://images.unsplash.com/photo-1628748312259-c6b3d381b0c2?auto=format&fit=crop&w=900&q=80",
-            title:
-                "Modern texas home is beautiful and completely kid-friendly",
+                "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+            title: "Best headphones of 2025 for music lovers",
             date: "October 14, 2023",
         },
     ];
 
     return (
-        <section className="max-w-6xl mx-auto px-4 py-12">
+        <section className="sm:px-8 md:mx-[4rem] lg:mx-[7rem] py-12">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {blogs.map((blog, index) => (
-                    <BlogCard
+                    <BlogPost
                         key={index}
                         image={blog.image}
                         title={blog.title}
