@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogCard = ({ image, title, date }) => {
+const BlogPost = ({ image, title, date }) => {
     return (
         <div className="flex flex-col">
             <img
@@ -14,4 +14,4 @@ const BlogCard = ({ image, title, date }) => {
     );
 };
 
-export default BlogCard;
+export default BlogPost;
