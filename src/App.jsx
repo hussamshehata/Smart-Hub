@@ -9,7 +9,7 @@ import Blog from "./pages/Blog.jsx";
 import Login from "./pages/Auth/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
-
+import ShoppingCartPage from "./pages/ShoppingCartPage.jsx";
 
 function App() {
     const location = useLocation();
@@ -24,6 +24,7 @@ function App() {
                     <Route path="contact" element={<Contact />} />
                     <Route path="product/:id" element={<ProductDetails />} />
                     <Route path="blog" element={<Blog />} />
+                    <Route path="cart" element={<ShoppingCartPage />} />
 
 
 
@@ -34,6 +35,7 @@ function App() {
 
                 {/* Routes without layout */}
                 <Route path="/login" element={<Login />} />
+
                 <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
         </AnimatePresence>

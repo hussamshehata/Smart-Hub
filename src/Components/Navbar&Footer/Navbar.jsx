@@ -11,44 +11,12 @@ import {
 
 import ThemeToggle from "../All-Buttons/ThemeToggle.jsx";
 import CartSidebar from "./Sidebar.jsx";
+import Menucart from "./Menucart.jsx";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const [isCartOpen, setIsCartOpen] = useState(false);
-    const [cartCount] = useState(2);
 
-    const [cartItems, setCartItems] = useState([
-        {
-            id: 1,
-            name: "Tidy Table",
-            price: 94.99,
-            quantity: 2,
-            image:
-                "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=100&h=100&fit=crop",
-        },
-        {
-            id: 2,
-            name: "Red Chair",
-            price: 89.99,
-            quantity: 1,
-            image:
-                "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=100&h=100&fit=crop",
-        },
-    ]);
 
-    const updateQuantity = (id, change) => {
-        setCartItems((items) =>
-            items.map((item) =>
-                item.id === id
-                    ? { ...item, quantity: Math.max(1, item.quantity + change) }
-                    : item
-            )
-        );
-    };
-
-    const removeItem = (id) => {
-        setCartItems((items) => items.filter((item) => item.id !== id));
-    };
 
     return (
         <>
@@ -158,19 +126,8 @@ export default function Navbar() {
                         </Link>
 
                         {/* Cart */}
-                        <div className="relative flex items-center justify-center">
-                            <button
-                                className="flex items-center justify-center text-gray-600 hover:text-black transition-all duration-200"
-                                onClick={() => setIsCartOpen(true)}
-                            >
-                                <ShoppingBag size={20} />
-                            </button>
-                            {cartCount > 0 && (
-                                <span className="absolute -top-1 -right-2 bg-black text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
-                  {cartCount}
-                </span>
-                            )}
-                        </div>
+                   
+                          <Menucart/>
 
                         {/* Theme Toggle */}
                         <ThemeToggle />
@@ -217,15 +174,6 @@ export default function Navbar() {
                     </div>
                 )}
             </nav>
-
-            {/* --- Cart Sidebar --- */}
-            <CartSidebar
-                isOpen={isCartOpen}
-                onClose={() => setIsCartOpen(false)}
-                cartItems={cartItems}
-                updateQuantity={updateQuantity}
-                removeItem={removeItem}
-            />
         </>
     );
 }
