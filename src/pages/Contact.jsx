@@ -31,7 +31,7 @@ export default function Contact() {
                     <div className="flex flex-col lg:flex-row w-full">
                         <img src="" alt="About Us" className="w-full lg:w-1/2 object-cover" />
 
-                        <div className="flex flex-col justify-center px-8 py-10 lg:py-[60px] lg:w-1/2 w-full lg:w-1/2 bg-neutral-100">
+                        <div className="flex flex-col justify-center px-8 py-10 lg:py-[60px] w-full lg:w-1/2 bg-neutral-100">
                             <h4 className="text-4xl font-medium">About Us</h4>
                             <p className="text-base font-normal pt-4 pb-2">
                                 Smart-Hub is a trusted online store based in Egypt, specializing in smartphones,
