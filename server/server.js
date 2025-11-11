@@ -4,6 +4,7 @@ import cors from "cors";
 import connectDB from "./config/database.js"; // import database connection
 import errorHandler from "./utils/errorHandler.js";
 import { logger } from "./middleware/logger.js";
+import userRoutes from "./routes/userRoutes.js";
 dotenv.config(); //  load .env variables
 connectDB();     // connect to MongoDB
 
@@ -12,6 +13,7 @@ app.use(cors());
 app.use(express.json());
 app.use(errorHandler);
 app.use(logger);
+app.use("/api/users", userRoutes);
 
 // Basic route to check server status
 app.get("/", (req, res) => {
