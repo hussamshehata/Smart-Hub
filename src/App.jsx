@@ -9,6 +9,7 @@ import Login from "./pages/Auth/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
 import ShoppingCartPage from "./pages/ShoppingCartPage.jsx";
+import Mobiles from "./pages/shop/mobiles/Mobiles.jsx";
 
 function App() {
     const location = useLocation();
@@ -19,10 +20,12 @@ function App() {
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<Home />} />
                     <Route path="shop" element={<Shop />} />
+                    <Route path="/shop/mobiles" element={<Mobiles />} />
                     <Route path="Product" element={<Product />} />
                     <Route path="contact" element={<Contact />} />
                     <Route path="product/:id" element={<ProductDetails />} />
                     <Route path="cart" element={<ShoppingCartPage />} />
+                  
 
 
 

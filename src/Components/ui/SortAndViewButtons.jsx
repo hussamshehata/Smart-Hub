@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown, LayoutGrid, Grid, List } from "lucide-react";
 
-/**
- * Props:
- * - view (string): الوضع الحالي (grid3 / grid2 / list)
- * - setView (function): لتغيير طريقة العرض
- * - sortOption (string): القيمة الحالية للفرز
- * - setSortOption (function): لتغيير خيار الفرز
- */
+
 export default function SortAndViewButtons({ view, setView, sortOption, setSortOption }) {
   const [open, setOpen] = useState(false);
 
@@ -22,7 +16,6 @@ export default function SortAndViewButtons({ view, setView, sortOption, setSortO
 
   return (
     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-end w-full border-b border-muted-300 pb-1 mb-6 relative">
-      {/* 🔽 Sort Dropdown */}
       <div className="relative mb-3 sm:mb-0">
         <button
           onClick={() => setOpen((prev) => !prev)}
@@ -37,7 +30,7 @@ export default function SortAndViewButtons({ view, setView, sortOption, setSortO
         </button>
 
         {open && (
-          <div className="absolute top-11 left-0 w-56  border border-muted-600 rounded-lg shadow-md z-20 mt-2">
+          <div className="absolute top-11 left-0 w-56  border border-muted-600 rounded-lg shadow-md z-20 mt-2 bg-neutral-50">
             {options.map((opt) => (
               <button
                 key={opt}

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 15 Pro Max",
+    "brand": "Apple",
+    "price": 1299,
+    "storage": "512GB",
+    "camera": "48MP",
+    "battery": "4422 mAh",
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-max-finish-select-202309-6-7inch-blue-titanium_AV1?wid=5120&hei=2880"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S24 Ultra",
+    "brand": "Samsung",
+    "price": 1199,
+    "storage": "512GB",
+    "camera": "200MP",
+    "battery": "5000 mAh",
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/levant/galaxy-s24-ultra-highlights-mo-01.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Xiaomi 14 Pro",
+    "brand": "Xiaomi",
+    "price": 899,
+    "storage": "256GB",
+    "camera": "50MP",
+    "battery": "4880 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-14-pro-1.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Google Pixel 8 Pro",
+    "brand": "Google",
+    "price": 999,
+    "storage": "256GB",
+    "camera": "50MP",
+    "battery": "5050 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/google/google-pixel8-pro-1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "OnePlus 12",
+    "brand": "OnePlus",
+    "price": 849,
+    "storage": "512GB",
+    "camera": "64MP",
+    "battery": "5400 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Oppo Find X7 Pro",
+    "brand": "Oppo",
+    "price": 799,
+    "storage": "256GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/oppo/oppo-find-x7-pro-1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Vivo X100 Pro",
+    "brand": "Vivo",
+    "price": 849,
+    "storage": "512GB",
+    "camera": "50MP",
+    "battery": "5400 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/vivo/vivo-x100-pro-1.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Realme GT 6 Pro",
+    "brand": "Realme",
+    "price": 699,
+    "storage": "256GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/realme/realme-gt6-pro-1.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Huawei P60 Pro",
+    "brand": "Huawei",
+    "price": 899,
+    "storage": "256GB",
+    "camera": "48MP",
+    "battery": "4815 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/huawei/huawei-p60-pro-1.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Infinix Zero Ultra",
+    "brand": "Infinix",
+    "price": 499,
+    "storage": "256GB",
+    "camera": "200MP",
+    "battery": "4500 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/infinix/infinix-zero-ultra-1.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Tecno Phantom X2 Pro",
+    "brand": "Tecno",
+    "price": 599,
+    "storage": "256GB",
+    "camera": "50MP",
+    "battery": "5160 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/tecno/tecno-phantom-x2-pro-1.jpg"
+  },
+  {
+    "id": 12,
+    "name": "iPhone 14",
+    "brand": "Apple",
+    "price": 799,
+    "storage": "128GB",
+    "camera": "12MP",
+    "battery": "3279 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-1.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Samsung Galaxy A55",
+    "brand": "Samsung",
+    "price": 449,
+    "storage": "128GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a55-1.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Poco F6 Pro",
+    "brand": "Poco",
+    "price": 599,
+    "storage": "256GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/xiaomi/poco-f6-pro-1.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Asus ROG Phone 8",
+    "brand": "Asus",
+    "price": 1099,
+    "storage": "512GB",
+    "camera": "50MP",
+    "battery": "5500 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/asus/asus-rog-phone8-1.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Nokia X30 5G",
+    "brand": "Nokia",
+    "price": 499,
+    "storage": "256GB",
+    "camera": "50MP",
+    "battery": "4200 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-x30-5g-1.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Sony Xperia 1 VI",
+    "brand": "Sony",
+    "price": 1199,
+    "storage": "512GB",
+    "camera": "48MP",
+    "battery": "5000 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-1-vi-1.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Honor Magic 6 Pro",
+    "brand": "Honor",
+    "price": 999,
+    "storage": "512GB",
+    "camera": "180MP",
+    "battery": "5600 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/honor/honor-magic6-pro-1.jpg"
+  },
+  {
+    "id": 19,
+    "name": "ZTE Nubia Red Magic 9 Pro",
+    "brand": "ZTE",
+    "price": 899,
+    "storage": "512GB",
+    "camera": "50MP",
+    "battery": "6500 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/zte/zte-nubia-red-magic9-pro-1.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Nothing Phone (2)",
+    "brand": "Nothing",
+    "price": 699,
+    "storage": "256GB",
+    "camera": "50MP",
+    "battery": "4700 mAh",
+    "image": "https://fdn2.gsmarena.com/vv/pics/nothing/nothing-phone-2-1.jpg"
+  }
+]
