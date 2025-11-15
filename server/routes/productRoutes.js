@@ -1,18 +1,25 @@
 import express from "express";
 import {
-  getProducts,
-  getProductById,
-  createProduct,
-  updateProduct,
-  deleteProduct,
+    getProducts,
+    getProductById,
+    createProduct,
+    updateProduct,
+    deleteProduct,
 } from "../controllers/productController.js";
 
 const router = express.Router();
 
+// Example URLs:
+// GET /api/products           -> all products
+// GET /api/products?brand=Apple -> products filtered by brand
+// POST /api/products/Apple    -> create Apple product
+// PATCH /api/products/:id     -> update
+// DELETE /api/products/:id    -> delete
+
 router.get("/", getProducts);
-router.post("/", createProduct);
 router.get("/:id", getProductById);
-router.put("/:id", updateProduct);
+router.post("/:brand?", createProduct); // optional brand in URL
+router.patch("/:id", updateProduct);
 router.delete("/:id", deleteProduct);
 
 export default router;
