@@ -5,6 +5,7 @@ import connectDB from "./config/database.js"; // import database connection
 import errorHandler from "./utils/errorHandler.js";
 import { logger } from "./middleware/logger.js";
 import userRoutes from "./routes/userRoutes.js";
+import cartRoutes from "./routes/cartRoutes.js";
 dotenv.config(); //  load .env variables
 connectDB();     // connect to MongoDB
 
@@ -15,6 +16,10 @@ app.use(errorHandler);
 app.use(logger);
 app.use("/api/users", userRoutes);
 
+app.use('/api/cart', cartRoutes);
+
+
+
 // Basic route to check server status
 app.get("/", (req, res) => {
     res.send("Smart Hub backend is running 🚀");
@@ -22,3 +27,6 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+
+
+
