@@ -5,6 +5,7 @@ import connectDB from "./config/database.js"; // import database connection
 import errorHandler from "./utils/errorHandler.js";
 import { logger } from "./middleware/logger.js";
 import userRoutes from "./routes/userRoutes.js";
+import cartRoutes from "./routes/cartRoutes.js";
 
 
 dotenv.config(); //  load .env variables
