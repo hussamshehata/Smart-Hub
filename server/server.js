@@ -17,6 +17,10 @@ app.use(errorHandler);
 app.use(logger);
 app.use("/api/users", userRoutes);
 
+app.use('/api/cart', cartRoutes);
+
+
+
 // Basic route to check server status
 app.get("/", (req, res) => {
     res.send("Smart Hub backend is running 🚀");
@@ -24,3 +28,6 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+
+
+
