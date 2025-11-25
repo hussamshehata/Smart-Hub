@@ -1,4 +1,4 @@
-import imge from '../../assets/images/Lifestyle-Innovators.jpg'
+
 
 export default function FullPost() {
     return (
@@ -8,11 +8,11 @@ export default function FullPost() {
                 Smarter Living Powered
             </h1>
 
-            <div className="flex items-center gap-3 mt-3 text-sm text-gray-600">
+            <div className="flex items-center gap-3 mt-3 text-sm text-neutral-700">
                 <div className="flex items-center gap-1">
                     <span>Samsung Developer</span>
                 </div>
-                <div className="w-1 h-1 rounded-full bg-gray-400" />
+                <div className="w-1 h-1 rounded-full text-neutral-500" />
                 <span>Apr 17, 2025</span>
             </div>
 
@@ -26,7 +26,7 @@ export default function FullPost() {
             </div>
 
             {/* ─── TEXT BLOCK ─── */}
-            <p className="text-gray-700 mt-8 leading-relaxed">
+            <p className="text-neutral-700 mt-8 leading-relaxed">
                 Modern wearable technology has taken a major leap over the past decade.
                 Once limited to step counting and basic notifications, devices like smartwatches,
                 fitness bands, and wireless earbuds now support advanced health tracking,
@@ -73,7 +73,7 @@ export default function FullPost() {
                         <p className="text-sm mt-2 font-medium">
                             Best headphones of 2025 for music lovers
                         </p>
-                        <span className="text-xs text-gray-500">5 min read</span>
+                        <span className="text-xs text-neutral-500">5 min read</span>
                     </div>
                     <div
 
@@ -87,7 +87,7 @@ export default function FullPost() {
                         <p className="text-sm mt-2 font-medium">
                             Top smartwatch brands for health tracking
                         </p>
-                        <span className="text-xs text-gray-500">5 min read</span>
+                        <span className="text-xs text-neutral-500">5 min read</span>
                     </div>
                     <div
                         className="rounded-xl overflow-hidden cursor-pointer hover:opacity-90 transition"
@@ -100,11 +100,11 @@ export default function FullPost() {
                         <p className="text-sm mt-2 font-medium">
                             How to improve battery life on your phone
                         </p>
-                        <span className="text-xs text-gray-500">5 min read</span>
+                        <span className="text-xs text-neutral-500">5 min read</span>
                     </div>
                 </div>
 
-                <button className="text-sm mt-3 font-medium text-gray-500 hover:text-black underline">
+                <button className="text-sm mt-3 font-medium text-neutral-500 hover:text-black underline">
                     More Articles →
                 </button>
             </div>
