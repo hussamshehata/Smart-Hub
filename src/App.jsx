@@ -10,6 +10,7 @@ import Login from "./pages/Auth/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
 import ShoppingCartPage from "./pages/ShoppingCartPage.jsx";
+import PostDetails from "./pages/PostDetails.jsx";
 
 function App() {
     const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
                     <Route path="contact" element={<Contact />} />
                     <Route path="product/:id" element={<ProductDetails />} />
                     <Route path="blog" element={<Blog />} />
+                    <Route path="Post" element={<PostDetails />} />
                     <Route path="cart" element={<ShoppingCartPage />} />
 
 

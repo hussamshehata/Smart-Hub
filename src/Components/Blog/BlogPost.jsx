@@ -9,7 +9,7 @@ const BlogPost = ({ image, title, date }) => {
                 className="mb-4 object-cover w-full h-56"
             />
             <h3 className="font-medium text-lg mb-2">{title}</h3>
-            <p className="text-gray-500 text-sm">{date}</p>
+            <p className="text-neutral-500 text-sm">{date}</p>
         </div>
     );
 };
