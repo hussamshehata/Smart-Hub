@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 
 import HeroBanner from "@/Components/HeroBanner";
 import Brands from "@/Components/Brands";
+import NewArrivals from "@/Components/NewArrivals";
 import ShopCollection from "@/Components/ShopCollection";
+import BestSeller from "@/Components/BestSeller";
 import PromoBanner from "@/Components/PromoBanner";
 import Services from "@/Components/Services";
 import InstagramFeed from "@/Components/InstagramFeed";
@@ -19,7 +21,9 @@ export default function Home() {
         >
             <HeroBanner />
             <Brands />
+            <NewArrivals/>
             <ShopCollection />
+            <BestSeller/>
             <PromoBanner />
             <Services />
             <InstagramFeed />
