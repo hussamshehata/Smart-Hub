@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 function BestSeller() {
     const [visibleCount, setVisibleCount] = useState(4);
     const [favorites, setFavorites] =useState({});
@@ -29,7 +29,7 @@ function BestSeller() {
 
             <div className="flex flex-wrap justify-center gap-8">
                     {visibleProducts.map((product) => (
-                        <div key={product.id} className="flex  flex-col  gap-2  text-neutral-700">
+                        <div key={product.id} className="flex  flex-col  gap-2  text-neutral-700 bg-white border-solid ">
 
                             <div className="flex  flex-col  justify-between  h-72  w-64  p-4   group  relative hover:z-10  hover:shadow-[0_0_25px_rgba(0,0,0,0)]"
                             style={{ backgroundImage: `url(${product.bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -44,16 +44,19 @@ function BestSeller() {
                                 </div>
                                 <Button variant="default" size="default" className="opacity-0  group-hover:opacity-100  transition-opacity  duration-300">Add to cart</Button>
                             </div>
-
-                            <div className="flex  gap-1">
-                                {Array.from ({ length: 5 }).map((_,i) => (
-                                    <svg key={i} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill={i < product.rating ? "currentColor" : "none" } stroke="currentColor" strokeWidth="2" class="lucide lucide-star-icon lucide-star text-neutral-700"> <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/> </svg>
-                                ))}
-                            </div>
                             
-                            <p className="text-1xl">{product.name}</p>
-                            <p className="text-1xl">{product.description}</p>
-                            <p className="text-1xl">{product.price}</p>
+                            <div className="px-2 gap">
+                                <div className="flex  gap-1">
+                                    {Array.from ({ length: 5 }).map((_,i) => (
+                                        <svg key={i} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill={i < product.rating ? "currentColor" : "none" } stroke="currentColor" strokeWidth="2" class="lucide lucide-star-icon lucide-star text-neutral-700"> <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/> </svg>
+                                    ))}
+                                </div>
+
+
+                                <p className="text-1xl">{product.name}</p>
+                                <p className="text-1xl">{product.description}</p>
+                                <p className="text-1xl">{product.price}</p>
+                            </div>
                         </div>
                     ))}
             </div>

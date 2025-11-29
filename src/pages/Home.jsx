@@ -1,15 +1,15 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 
-import HeroBanner from "@/Components/HeroBanner";
-import Brands from "@/Components/Brands";
-import NewArrivals from "@/Components/NewArrivals";
-import ShopCollection from "@/Components/ShopCollection";
-import BestSeller from "@/Components/BestSeller";
-import PromoBanner from "@/Components/PromoBanner";
-import Services from "@/Components/Services";
-import InstagramFeed from "@/Components/InstagramFeed";
-import Newsletter from "@/Components/Newsletter";
+import HeroBanner from "@/Components/HomePage/HeroBanner";
+import Brands from "@/Components/HomePage/Brands";
+import NewArrivals from "@/Components/HomePage/NewArrivals";
+import ShopCollection from "@/Components/HomePage/ShopCollection";
+import BestSeller from "@/Components/HomePage/BestSeller";
+import PromoBanner from "@/Components/HomePage/PromoBanner";
+import Services from "@/Components/HomePage/Services";
+import InstagramFeed from "@/Components/HomePage/InstagramFeed";
+import Newsletter from "@/Components/HomePage/Newsletter";
 export default function Home() {
     return (
         <motion.div
