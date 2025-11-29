@@ -27,13 +27,13 @@ function HeroBanner() {
 
 
     return (
-        <section className="h-screen  bg-cover  bg-center  bg-no-repeat  flex  flex-col  justify-center  items-end  transition-all  duration-700   ease-in-out"
+        <section className="h-screen  bg-cover  bg-center  bg-no-repeat  flex  flex-col  justify-center items-center  md:items-end  transition-all  duration-700  ease-in-out"
                  style={{backgroundImage: `url(${images[currentImage]})`}} >
 
-            <div className="w-1/2">
+            <div className="w-11/12 sm:w-3/4 md:w-1/2">
                 <div className="flex  flex-col  gap-4  bg-white/50  p-4  w-max  rounded-2xl">
-                    <h2 className="text-neutral-700 text-5xl" >{title}</h2>
-                    <p className="text-neutral-700 text-2xl">{description}</p>
+                    <h2 className="text-neutral-700 text-3xl sm:text-4xl md:text-5xl" >{title}</h2>
+                    <p className="text-neutral-700 text-xl sm:text-2xl md:text-2xl">{description}</p>
                     <Button variant="blacky" size="default" className="w-40" onClick={handleShopClick}>Shop Now</Button>
                 </div>
             </div>
