@@ -1,0 +1,26 @@
+[
+  { 
+    "name": "Apple" ,
+    "image": "src/assets/images/Apple.jpg"
+  },
+  { 
+    "name": "Samsung" ,
+    "image": "src/assets/images/Samsung.jpg"
+  },
+  { 
+    "name": "Oppo" ,
+    "image": "src/assets/images/Oppo.jpg"
+  },
+  { 
+    "name": "Huawei" ,
+    "image": "src/assets/images/Huawei.jpg"
+  },
+  { 
+    "name": "Sony" ,
+    "image": "src/assets/images/Sony.jpg"
+  },
+  { 
+    "name": "Lenovo" ,
+    "image": "src/assets/images/Lenovo.jpg"
+  }
+]

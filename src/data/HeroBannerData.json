@@ -1,0 +1,11 @@
+{
+    "client":"Hussam" ,
+    "title": "welcome to Smart Hub ",
+    "description": "Your one-stop shop for all things tech.",
+    "images" :
+    [
+        "src/assets/images/background.jpeg",
+        "src/assets/images/background.jpeg",
+        "src/assets/images/background.jpeg"
+    ]
+}
