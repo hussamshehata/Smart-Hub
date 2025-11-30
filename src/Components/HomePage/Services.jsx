@@ -28,9 +28,9 @@ function Services () {
 
     return ( 
         <div className="flex justify-center mx-40 py-10">
-            <div className="flex gap-8 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full">
                 {servicesData.map((service) => (
-                    <div key={servicesData.id} className=" bg-gray-200 p-4 w-1/4 h-48 flex flex-col justify-center gap-4">
+                    <div key={servicesData.id} className="bg-gray-200 p-4 h-48 flex flex-col justify-center gap-4 min-w-[160px]">
                         {service.icon}
                         <p className="text-2xl text-neutral-700">{service.title}</p>
                         <p className="text-sm text-neutral-500">{service.description}</p>
