@@ -11,6 +11,8 @@ import Dashboard from "./pages/Dashboard.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
 import ShoppingCartPage from "./pages/ShoppingCartPage.jsx";
 import PostDetails from "./pages/PostDetails.jsx";
+import AdminDashboard from "./Components/Dashboard/AdminTable.jsx";
+
 
 function App() {
     const location = useLocation();
@@ -39,6 +41,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
 
                 <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/dashboard/products" element={< AdminDashboard/>} />
             </Routes>
         </AnimatePresence>
     );
