@@ -10,11 +10,11 @@ import {
 const router = express.Router();
 
 // Example URLs:
-// GET /api/products           -> all products
-// GET /api/products?brand=Apple -> products filtered by brand
-// POST /api/products/Apple    -> create Apple product
-// PATCH /api/products/:id     -> update
-// DELETE /api/products/:id    -> delete
+// GET /services/products           -> all products
+// GET /services/products?brand=Apple -> products filtered by brand
+// POST /services/products/Apple    -> create Apple product
+// PATCH /services/products/:id     -> update
+// DELETE /services/products/:id    -> delete
 
 router.get("/", getProducts);
 router.get("/:id", getProductById);

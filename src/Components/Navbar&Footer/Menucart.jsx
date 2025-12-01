@@ -1,7 +1,7 @@
 import React from "react";
-import { ShoppingBag } from "lucide-react";
+import { ShoppingBag} from "lucide-react";
 import { useSelector } from "react-redux";
-import { Button } from "@/Components/ui/button.jsx";
+
 import CartSidebar from "./Sidebar.jsx";
 import { selectCartTotalQuantity } from "@/redux/cartSlice";
 
@@ -15,15 +15,13 @@ export default function Menucart() {
       {/* Announcement Bar */}
 
       {/* Navbar */}
-      <div className="relative hidden sm:flex">
-        <Button
-          variant="outline"
-          size="icon"
-          className="me-2"
+        <button className="flex items-center justify-center text-gray-600 hover:text-black transition-all duration-200"
           onClick={() => setIsCartOpen(true)}
         >
-          <ShoppingBag size={18} />
-        </Button>
+            <ShoppingBag size={20} />
+        </button>
+        <div className="relative ml-4">
+
         {cartCount > 0 && (
           <span className="absolute -top-1 -right-2 bg-black text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
             {cartCount}
