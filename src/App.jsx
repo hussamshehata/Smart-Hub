@@ -7,6 +7,7 @@ import Product from "./pages/Product.jsx";
 import Contact from "./pages/Contact.jsx";
 import Blog from "./pages/Blog.jsx";
 import Login from "./pages/Auth/Login.jsx";
+import Signup from "@/pages/Auth/Signup.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import ProductDetails from "./pages/ProductDetails.jsx";
 import ShoppingCartPage from "./pages/ShoppingCartPage.jsx";
@@ -39,7 +40,7 @@ function App() {
 
                 {/* Routes without layout */}
                 <Route path="/login" element={<Login />} />
-
+                <Route path="/register" element={<Signup />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/dashboard/products" element={< AdminDashboard/>} />
             </Routes>
