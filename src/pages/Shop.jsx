@@ -5,8 +5,8 @@ import SortAndViewButtons from "@/Components/ui/SortAndViewButtons";
 import ProductCard from "@/Components/ProductCard.jsx";
 
 export default function Shop() {
-  const [view, setView] = useState("grid3");
-  const [sortOption, setSortOption] = useState("Default");
+  const [view] = useState("grid3");
+  const [sortOption] = useState("Default");
 
   return (
     <motion.div
@@ -18,12 +18,6 @@ export default function Shop() {
     >
       <section className="max-w-7xl mb-12 mx-auto p-2">
         <h1 className="text-3xl font-bold mb-6">Shop</h1>
-        <SortAndViewButtons
-          view={view}
-          setView={setView}
-          sortOption={sortOption}
-          setSortOption={setSortOption}
-        />
         <ProductCard view={view} sortOption={sortOption} />
       </section>
     </motion.div>

@@ -1,0 +1,533 @@
+[
+    {
+        "id": 1,
+        "name": "IPHONE 17 Pro Max",
+        "description": "High-quality sound with active noise cancellation.",
+        "price": "1499.99$",
+        "newArrival": false,
+        "soldCount": "20",
+        "rating": 4,
+        "bgImage": "src/assets/images/Iphone17Pro.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch",
+        "description": "Track your fitness and stay connected on the go.",
+        "price": "149.99$",
+        "newArrival": false,
+        "soldCount": "10",
+        "rating": 5,
+        "bgImage": "https://res.cloudinary.com/dmsvr8dnt/image/upload/v1760220178/smartwatch_of3d0s.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Bluetooth Speaker",
+        "description": "Portable speaker with deep bass and crystal sound.",
+        "price": "79.99$",
+        "newArrival": false,
+        "soldCount": "0",
+        "rating": 3,
+        "bgImage": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 4,
+        "name": "Wireless Earbuds",
+        "description": "Premium sound quality with ergonomic design.",
+        "price": "199.99$",
+        "newArrival": false,
+        "soldCount": "15",
+        "rating": 2,
+        "bgImage": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 5,
+        "name": "Laptop Stand",
+        "description": "Adjustable aluminum stand for better posture.",
+        "price": "49.99$",
+        "newArrival": false,
+        "soldCount": "20",
+        "rating": 5,
+        "bgImage": "src/assets/images/LaptopStand.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Mechanical Keyboard",
+        "description": "RGB backlit keyboard with tactile switches.",
+        "price": "129.99$",
+        "newArrival": false,
+        "soldCount": "6",
+        "rating": 1,
+        "bgImage": "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 7,
+        "name": "USB-C Hub",
+        "description": "Multi-port hub with HDMI and USB 3.0 ports.",
+        "price": "39.99$",
+        "newArrival": false,
+        "soldCount": "3",
+        "rating": 4,
+        "bgImage": "src/assets/images/USB-C-Hub.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "Webcam HD",
+        "description": "1080p webcam with built-in microphone.",
+        "price": "89.99$",
+        "newArrival": false,
+        "soldCount": "0",
+        "rating": 3,
+        "bgImage": "src/assets/images/HDWebcam.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "Gaming Mouse",
+        "description": "High-precision optical sensor with RGB lighting.",
+        "price": "59.99$",
+        "newArrival": false,
+        "soldCount": "17",
+        "rating": 5,
+        "bgImage": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 10,
+        "name": "Samsung Galaxy S24",
+        "description": "Description",
+        "price": "1199$",
+        "newArrival": false,
+        "soldCount": "20",
+        "rating": 5,
+        "bgImage": "src/assets/images/SamsungGalaxyS24.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "Apple MacBook Air M2",
+        "description": "Description",
+        "price": "1299$",
+        "newArrival": false,
+        "soldCount": "15",
+        "rating": 0,
+        "bgImage": "src/assets/images/MacBookAirM2.jpeg"
+    },
+    {
+        "id": 12,
+        "name": "Sony WH-1000XM5",
+        "description": "Description",
+        "price": "299.99$",
+        "newArrival": false,
+        "soldCount": "11",
+        "rating": 1,
+        "bgImage": "src/assets/images/SonyWH1000XM5.jpeg"
+    },
+
+    {
+        "id": 13,
+        "name": "Lenovo Legion 7 Gaming Laptop",
+        "description": "High-end gaming laptop with RTX graphics.",
+        "price": "1899.99$",
+        "newArrival": true,
+        "soldCount": "2",
+        "rating": 5,
+        "bgImage": "https://i5.walmartimages.com/seo/Lenovo-Legion-7-Intel-Core-i7-10750H-32GB-1TB-15-Gaming-Laptop_68957843-ce08-4a02-93b1-5c729e8b58b2.fce850550f25986ddc0b4a0090cb49c3.jpeg"
+    },
+    {
+        "id": 14,
+        "name": "Dell XPS 15",
+        "description": "Ultra-thin premium laptop for creators.",
+        "price": "1599.99$",
+        "newArrival": true,
+        "soldCount": "4",
+        "rating": 4,
+        "bgImage": "https://m.media-amazon.com/images/I/81Vep45DQ4L.jpg"
+    },
+    {
+        "id": 15,
+        "name": "HP Spectre x360",
+        "description": "Professional 2-in-1 convertible laptop.",
+        "price": "1399.99$",
+        "newArrival": true,
+        "soldCount": "3",
+        "rating": 5,
+        "bgImage": "https://m.media-amazon.com/images/I/71AgpORJXXL.jpg"
+    },
+    {
+        "id": 16,
+        "name": "iPhone 16",
+        "description": "Latest smart performance with advanced camera.",
+        "price": "1299.99$",
+        "newArrival": true,
+        "soldCount": "8",
+        "rating": 4,
+        "bgImage": "https://miamicenters.com/wp-content/uploads/2025/04/16-pro-black.png"
+    },
+    {
+        "id": 17,
+        "name": "Samsung Galaxy Z Flip 6",
+        "description": "Powerful foldable design with pro camera.",
+        "price": "1499.99$",
+        "newArrival": true,
+        "soldCount": "5",
+        "rating": 5,
+        "bgImage": "https://m.media-amazon.com/images/I/61dWnrXLYbL.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Xiaomi Mi Band 8",
+        "description": "Compact fitness tracker with AMOLED display.",
+        "price": "49.99$",
+        "newArrival": true,
+        "soldCount": "12",
+        "rating": 4,
+        "bgImage": "https://i02.appmifile.com/655_operator_sg/23/05/2023/0e0773bad07ec8581172f5ac8c6f8531.png"
+    },
+    {
+        "id": 19,
+        "name": "JBL Charge 5 Speaker",
+        "description": "Portable speaker with waterproof design.",
+        "price": "129.99$",
+        "newArrival": true,
+        "soldCount": "14",
+        "rating": 5,
+        "bgImage": "https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": 20,
+        "name": "Sony WF-1000XM5 Earbuds",
+        "description": "Best-in-class noise-cancelling earbuds.",
+        "price": "249.99$",
+        "newArrival": true,
+        "soldCount": "9",
+        "rating": 5,
+        "bgImage": "https://i.rtings.com/assets/products/c93aW5Hs/sony-wf-1000xm5-truly-wireless/design-medium.jpg?format=auto"
+    },
+
+    {
+        "id": 21,
+        "name": "Acer Nitro 5",
+        "description": "Affordable gaming laptop with solid performance.",
+        "price": "999.99$",
+        "newArrival": true,
+        "soldCount": "7",
+        "rating": 4,
+        "bgImage": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/22227494/nitro52021.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=2400"
+    },
+
+    {
+        "id": 22,
+        "name": "Logitech G Pro Keyboard",
+        "description": "Mechanical keyboard designed for esports.",
+        "price": "149.99$",
+        "newArrival": true,
+        "soldCount": "6",
+        "rating": 5,
+        "bgImage": "https://resource.logitech.com/content/dam/gaming/en/products/pro-keyboard/pro-keyboard-gallery/deu-pro-gaming-keyboard-gallery-topdown.png"
+    },
+
+    {
+        "id": 23,
+        "name": "Razer BlackShark V2",
+        "description": "Premium gaming headset with clear mic.",
+        "price": "129.99$",
+        "newArrival": true,
+        "soldCount": "15",
+        "rating": 5,
+        "bgImage": "https://assets2.razerzone.com/images/pnx.assets/626b4be18a06e2fe8a64f3092ae11c5f/razer-blackshark-v2-pro-2023_hero-desktop-1920x700.webp"
+    },
+
+    {
+        "id": 24,
+        "name": "iPad Pro M2",
+        "description": "High-performance tablet for creators.",
+        "price": "1099.99$",
+        "newArrival": true,
+        "soldCount": "4",
+        "rating": 4,
+        "bgImage": "https://m.media-amazon.com/images/I/71brAk7Sc2L.jpg"
+    },
+
+    {
+        "id": 25,
+        "name": "Google Pixel 9",
+        "description": "Top-tier smartphone with AI camera.",
+        "price": "999.99$",
+        "newArrival": true,
+        "soldCount": "5",
+        "rating": 5,
+        "bgImage": "https://m.media-amazon.com/images/I/61fh21u3DJL.jpg"
+    },
+
+    {
+        "id": 26,
+        "name": "Beats Studio 4",
+        "description": "Wireless over-ear headphones.",
+        "price": "299.99$",
+        "newArrival": true,
+        "soldCount": "3",
+        "rating": 4,
+        "bgImage": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MUW23?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1742251252280"
+    },
+
+    {
+        "id": 27,
+        "name": "ASUS ROG Strix G17",
+        "description": "High-performance gaming laptop.",
+        "price": "1799.99$",
+        "newArrival": true,
+        "soldCount": "6",
+        "rating": 5,
+        "bgImage": "https://dlcdnwebimgs.asus.com/gain/89318C51-EB67-45A9-8CBA-668BC437DE0C"
+    },
+
+    {
+        "id": 28,
+        "name": "Lenovo ThinkPad X1",
+        "description": "Business-class premium ultrabook.",
+        "price": "1499.99$",
+        "newArrival": true,
+        "soldCount": "2",
+        "rating": 4,
+        "bgImage": "https://m.media-amazon.com/images/I/61nm3dwXAmL._AC_SL1500_.jpg"
+    },
+
+    {
+        "id": 29,
+        "name": "Realme Buds Air 3",
+        "description": "Affordable earbuds with ANC.",
+        "price": "59.99$",
+        "newArrival": true,
+        "soldCount": "10",
+        "rating": 4,
+        "bgImage": "https://m.media-amazon.com/images/I/51Fi0gfNoeL._AC_UF894,1000_QL80_.jpg"
+    },
+
+    {
+        "id": 30,
+        "name": "Huawei Watch GT 4",
+        "description": "Premium smartwatch with long battery life.",
+        "price": "249.99$",
+        "newArrival": true,
+        "soldCount": "8",
+        "rating": 5,
+        "bgImage": "https://consumer.huawei.com/content/dam/huawei-cbg-site/me-africa/common/mkt/pdp/wearables/watch-gt4/watch-gt4-g/images/sec1/huawei-watch-gt4-product-highlight-1.jpg"
+    },
+
+    {
+        "id": 31,
+        "name": "JBL Live 660NC",
+        "description": "Noise-cancelling wireless headphones.",
+        "price": "199.99$",
+        "newArrival": true,
+        "soldCount": "12",
+        "rating": 5,
+        "bgImage": "https://i.rtings.com/assets/products/NwEkjTzy/jbl-live-660nc-wireless/design-medium.jpg?format=auto"
+    },
+
+    {
+        "id": 32,
+        "name": "BOSE SoundLink Revolve",
+        "description": "360-degree portable Bluetooth speaker.",
+        "price": "229.99$",
+        "newArrival": true,
+        "soldCount": "5",
+        "rating": 4,
+        "bgImage": "https://m.media-amazon.com/images/I/61P5a1QJevL.jpg"
+    },
+
+    {
+        "id": 33,
+        "name": "ASUS ZenBook 14",
+        "description": "Lightweight powerful ultrabook.",
+        "price": "1099.99$",
+        "newArrival": true,
+        "soldCount": "3",
+        "rating": 5,
+        "bgImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToSwqMdVBn65rrvB6g7ms4WN0Ir90rrC02RA&s"
+    },
+
+    {
+        "id": 34,
+        "name": "Xiaomi Redmi Note 13",
+        "description": "Budget smartphone with strong battery.",
+        "price": "249.99$",
+        "newArrival": true,
+        "soldCount": "10",
+        "rating": 4,
+        "bgImage": "https://cdn.webshopapp.com/shops/256009/files/447245727/xiaomi-xiaomi-redmi-note-13-4g-6gb-128gb.jpg"
+    },
+
+    {
+        "id": 35,
+        "name": "Motorola Edge 50",
+        "description": "Smooth OLED display and fast charging.",
+        "price": "599.99$",
+        "newArrival": true,
+        "soldCount": "4",
+        "rating": 4,
+        "bgImage": "https://m.media-amazon.com/images/I/81pZVBW87JL.jpg"
+    },
+
+    {
+        "id": 36,
+        "name": "Logitech C920 Webcam",
+        "description": "Full HD webcam for streaming.",
+        "price": "89.99$",
+        "newArrival": true,
+        "soldCount": "8",
+        "rating": 5,
+        "bgImage": "https://m.media-amazon.com/images/I/5161K2M1JEL._AC_UF894,1000_QL80_.jpg"
+    },
+
+    {
+        "id": 37,
+        "name": "ASUS TUF Gaming Monitor",
+        "description": "165Hz gaming monitor for smooth visuals.",
+        "price": "299.99$",
+        "newArrival": true,
+        "soldCount": "5",
+        "rating": 5,
+        "bgImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJQdTS5v_AofLuPT2AcSj5FYqsQVnVleOC5Q&s    "
+    },
+
+    {
+        "id": 38,
+        "name": "Anker PowerCore 20K",
+        "description": "Fast-charging power bank with high capacity.",
+        "price": "49.99$",
+        "newArrival": true,
+        "soldCount": "20",
+        "rating": 5,
+        "bgImage": "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/A1268013_1.png?v=1750823226"
+    },
+
+    {
+        "id": 39,
+        "name": "Razer Viper Mini",
+        "description": "Lightweight gaming mouse.",
+        "price": "39.99$",
+        "newArrival": true,
+        "soldCount": "12",
+        "rating": 5,
+        "bgImage": "https://images.unsplash.com/photo-1593642633279-1796119d5482?auto=format&fit=crop&w=600&q=80"
+    },
+
+    {
+        "id": 40,
+        "name": "Sony Xperia 1 VI",
+        "description": "High-end phone with cinema-grade display.",
+        "price": "1199.99$",
+        "newArrival": true,
+        "soldCount": "3",
+        "rating": 4,
+        "bgImage": "https://m.media-amazon.com/images/I/41xz82sX5eL._AC_SR1000,1000_.jpg"
+    },
+
+    {
+        "id": 41,
+        "name": "MSI Stealth 16",
+        "description": "Premium slim gaming laptop.",
+        "price": "1699.99$",
+        "newArrival": true,
+        "soldCount": "2",
+        "rating": 4,
+        "bgImage": "https://m.media-amazon.com/images/I/71DcOU5jwHL.jpg"
+    },
+
+    {
+        "id": 42,
+        "name": "OnePlus Buds Pro 3",
+        "description": "Noise-cancelling earbuds.",
+        "price": "199.99$",
+        "newArrival": true,
+        "soldCount": "7",
+        "rating": 5,
+        "bgImage": "https://m.media-amazon.com/images/I/61dVOVxHn3L.jpg"
+    },
+
+    {
+        "id": 43,
+        "name": "HP Omen 16",
+        "description": "Powerful gaming laptop for heavy loads.",
+        "price": "1499.99$",
+        "newArrival": true,
+        "soldCount": "3",
+        "rating": 4,
+        "bgImage": "https://cdn.salla.sa/qxxlA/1d98745f-3e9f-4e4e-a591-7809ab78f114-1000x1000-vnwaCKcTNWYh3JruCWKLiDNDi20EvlnbJdPm6Z3O.png"
+    },
+
+    {
+        "id": 44,
+        "name": "Apple AirPods 4",
+        "description": "Next-gen earbuds with improved ANC.",
+        "price": "249.99$",
+        "newArrival": true,
+        "soldCount": "9",
+        "rating": 5,
+        "bgImage": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/121204-airpods-4-anc.png"
+    },
+
+    {
+        "id": 45,
+        "name": "Amazon Echo Dot 6",
+        "description": "Smart speaker with Alexa.",
+        "price": "69.99$",
+        "newArrival": true,
+        "soldCount": "11",
+        "rating": 5,
+        "bgImage": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24139110/226372_Echo_Dot_Clock_5th_Gen_J_0007.jpg?quality=90&strip=all&crop=0,0,100,100"
+    },
+
+    {
+        "id": 46,
+        "name": "Microsoft Surface Laptop Go 3",
+        "description": "Lightweight laptop for daily use.",
+        "price": "799.99$",
+        "newArrival": true,
+        "soldCount": "4",
+        "rating": 4,
+        "bgImage": "https://m.media-amazon.com/images/I/61xd8Qk2G9L.jpg"
+    },
+
+    {
+        "id": 47,
+        "name": "Razer Kraken X",
+        "description": "Lightweight gaming headset.",
+        "price": "49.99$",
+        "newArrival": true,
+        "soldCount": "9",
+        "rating": 5,
+        "bgImage": "https://www.mtd-eg.com/cdn/shop/products/razer-kraken-x-for-console-00_1500x.jpg?v=1607195621"
+    },
+
+    {
+        "id": 48,
+        "name": "Xiaomi Poco F7",
+        "description": "Strong mid-range smartphone.",
+        "price": "399.99$",
+        "newArrival": true,
+        "soldCount": "7",
+        "rating": 4,
+        "bgImage": "https://ennap.com/cdn/shop/files/a715b55d1735172762040ea8e89f2037.png?v=1750952949"
+    },
+
+    {
+        "id": 49,
+        "name": "Jabra Elite 10",
+        "description": "Premium wireless earbuds with deep bass.",
+        "price": "229.99$",
+        "newArrival": true,
+        "soldCount": "6",
+        "rating": 5,
+        "bgImage": "https://m.media-amazon.com/images/I/51Ng7LKCr6L._AC_UF894,1000_QL80_.jpg"
+    },
+
+    {
+        "id": 50,
+        "name": "ASUS ProArt StudioBook",
+        "description": "Creator laptop with high color accuracy.",
+        "price": "1999.99$",
+        "newArrival": true,
+        "soldCount": "3",
+        "rating": 5,
+        "bgImage": "https://www.asus.com/media/Odin/Websites/global/Series/21.png"
+    }
+]
