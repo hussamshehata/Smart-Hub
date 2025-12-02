@@ -1,158 +1,152 @@
-// src/Components/ProductCard.jsx
-import React, { useEffect } from "react";
-import ProductButtons from "./All-Buttons/productbuttons.jsx";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import AllProducts from "../data/AllProducts.json";
+import SortAndViewButtons from "./ui/SortAndViewButtons";
+export default function ProductCard() {
+  const [favorites, setFavorites] = useState({});
+  const [cart, setCart] = useState({});
+  const [view, setView] = useState("grid3");
+  const [sortOption, setSortOption] = useState("Default");
 
-export default function ProductCard({ view, sortOption }) {
- 
- const products = [
-    {
-      id: 1,
-      name: "IPHONE 17 Pro Max",
-      description: "High-quality sound with active noise cancellation.",
-      price: 1499.99,
-      image:
-        "https://res.cloudinary.com/dmsvr8dnt/image/upload/v1760220178/Iphone_wulxcf.jpg",
-    },
-    {
-      id: 2,
-      name: "Smart Watch",
-      description: "Track your fitness and stay connected on the go.",
-      price: 149.99,
-      image:
-        "https://res.cloudinary.com/dmsvr8dnt/image/upload/v1760220178/smartwatch_of3d0s.jpg",
-    },
-    {
-      id: 3,
-      name: "Bluetooth Speaker",
-      description: "Portable speaker with deep bass and crystal sound.",
-      price: 79.99,
-      image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 4,
-      name: "Wireless Earbuds",
-      description: "Premium sound quality with ergonomic design.",
-      price: 199.99,
-      image:
-        "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 5,
-      name: "Laptop Stand",
-      description: "Adjustable aluminum stand for better posture.",
-      price: 49.99,
-      image:
-        "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 6,
-      name: "Mechanical Keyboard",
-      description: "RGB backlit keyboard with tactile switches.",
-      price: 129.99,
-      image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 7,
-      name: "USB-C Hub",
-      description: "Multi-port hub with HDMI and USB 3.0 ports.",
-      price: 39.99,
-      image:
-        "https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 8,
-      name: "Webcam HD",
-      description: "1080p webcam with built-in microphone.",
-      price: 89.99,
-      image:
-        "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      id: 9,
-      name: "Gaming Mouse",
-      description: "High-precision optical sensor with RGB lighting.",
-      price: 59.99,
-      image:
-        "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=600&q=80",
-    },
-  ];
+  const products = AllProducts.filter(
+    (p) => p.soldCount !== undefined && p.rating !== undefined
+  );
 
-   useEffect(() => {
-      localStorage.setItem("products", JSON.stringify(products));
-  }, []);
+  const getSortedProducts = () => {
+    let sorted = [...products];
 
-  const sortedProducts = [...products].sort((a, b) => {
     switch (sortOption) {
       case "Price: Low to High":
-        return a.price - b.price;
+        sorted.sort((a, b) => parseFloat(a.price.replace("$", "")) - parseFloat(b.price.replace("$", "")));
+        break;
       case "Price: High to Low":
-        return b.price - a.price;
+        sorted.sort((a, b) => parseFloat(b.price.replace("$", "")) - parseFloat(a.price.replace("$", "")));
+        break;
       case "Name: A-Z":
-        return a.name.localeCompare(b.name);
+        sorted.sort((a, b) => a.name.localeCompare(b.name));
+        break;
       case "Name: Z-A":
-        return b.name.localeCompare(a.name);
+        sorted.sort((a, b) => b.name.localeCompare(a.name));
+        break;
+      case "Newest":
+        sorted.reverse();
+        break;
+      case "Default":
       default:
-        return 0;
+        sorted.sort((a, b) => {
+          const aCount = parseFloat(a.soldCount.replace("k", "")) * 1000;
+          const bCount = parseFloat(b.soldCount.replace("k", "")) * 1000;
+          return bCount - aCount;
+        });
     }
-  });
-  const gridClass =
-    view === "list"
-      ? "grid-cols-1"
-      : view === "grid2"
-      ? "grid-cols-2"
-      : "grid-cols-3";
 
+    return sorted;
+  };
 
+  const sortedProducts = getSortedProducts();
 
-        
+  const gridClasses = {
+    grid3: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8",
+    grid2: "grid grid-cols-1 sm:grid-cols-2 gap-8",
+    list: "flex flex-col gap-6",
+  };
+
+  const cardClasses = view === "list" 
+    ? "flex flex-row gap-4  rounded-lg shadow-xl hover:shadow-[0_0_25px_rgba(0,0,0,0.2)] transition-shadow duration-300 group overflow-hidden"
+    : "flex flex-col gap-2 text-neutral-700  w-full rounded-lg shadow-xl hover:shadow-[0_0_25px_rgba(0,0,0,0.2)] transition-shadow duration-300 group";
 
   return (
-    <section className=" mt-24">
-      <h1 className="text-5xl mb-16 pt-20">Best Seller</h1>
-      <div className={`grid ${gridClass} gap-10`}>
+    <div className="flex flex-col gap-8 mx-4 sm:mx-10 my-10 w-full">
+      {/* Sort and View Controls */}
+      <SortAndViewButtons
+        view={view}
+        setView={setView}
+        sortOption={sortOption}
+        setSortOption={setSortOption}
+      />
+
+      {/* Products Grid/List */}
+      <div className={gridClasses[view]}>
         {sortedProducts.map((product) => (
-          <div
-            key={product.id}
-            className={`bg-gradient-to-br from-neutral-150 to-neutral-200 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 ${
-              view === "list" ? "flex items-center gap-5 p-4" : ""
-            }`}
-          >
-            <Link
-              to={`/product/${product.id}`}
-              className={`relative overflow-hidden ${
-                view === "list" ? "w-1/3 rounded-xl" : "rounded-t-2xl"
-              }`}
+          <div key={product.id} className={cardClasses}>
+            <div
+              className={`flex flex-col justify-between rounded-t-lg ${view === "list" ? "w-64 h-64" : "w-full h-96"} p-4 group relative`}
+              style={{
+                backgroundImage: `url(${product.bgImage})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
             >
-              <img
-                src={product.image}
-                alt={product.name}
-                className={`object-cover ${
-                  view === "list" ? "w-full h-48 rounded-lg" : "w-full h-96"
-                }`}
-              />
-            </Link>
+              <div className="flex justify-between">
+                {product.soldCount && (
+                  <p className="text-1xl bg-white/80 rounded-sm font-bold py-2 px-4 w-max">
+                    {product.soldCount}
+                  </p>
+                )}
 
-            <div className="p-5 flex-1">
-              <h3 className="text-lg font-semibold mb-1 text-muted-700">
-                {product.name}
-              </h3>
-              <p className="text-sm text-muted-500 mb-4 line-clamp-2">
-                {product.description}
-              </p>
-
-              <div className="flex items-center justify-between">
-                <span className="text-lg font-bold text-muted-700">
-                  ${product.price}
-                </span>
-                <ProductButtons product={product} />
+                <div
+                  className="bg-white/80 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 cursor-pointer"
+                  onClick={() =>
+                    setFavorites({
+                      ...favorites,
+                      [product.id]: !favorites[product.id],
+                    })
+                  }
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill={favorites[product.id] ? "red" : "none"}
+                    stroke={favorites[product.id] ? "red" : "currentColor"}
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/>
+                  </svg>
+                </div>
               </div>
+
+              <button
+                className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary-500 text-neutral-100 px-4 py-2 rounded-md hover:bg-primary-600"
+                onClick={() =>
+                  setCart((prev) => ({
+                    ...prev,
+                    [product.id]: !prev[product.id],
+                  }))
+                }
+              >
+                {cart[product.id] ? "Added to cart" : "Add to cart"}
+              </button>
+            </div>
+
+            <div className={`p-4 ${view === "list" ? "flex-1" : ""}`}>
+              <div className="flex gap-1 mb-2">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <svg
+                    key={i}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill={i < product.rating ? "currentColor" : "none"}
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    className="lucide lucide-star-icon lucide-star text-neutral-400"
+                  >
+                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
+                  </svg>
+                ))}
+              </div>
+
+              <p className="text-1xl font-bold text-neutral-700">{product.name}</p>
+              <p className="text-1xl text-neutral-700">{product.description}</p>
+              <p className="text-1xl font-bold text-neutral-700">{product.price}</p>
             </div>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

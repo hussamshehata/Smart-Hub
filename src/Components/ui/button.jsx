@@ -10,10 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary-500 text-white hover:bg-primary-600",
-
-        blacky:
-          "bg-primary-900 text-white shadow-sm hover:bg-neutral-700",
+                "bg-primary-500 text-white hover:bg-primary-600",
 
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
@@ -24,14 +21,14 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
-      size: {
-        xs: "h-7 px-2 text-xs",
-        sm: "h-8 px-3 text-sm",
-        default: "h-10 px-4 text-sm",
-        lg: "h-12 px-6 text-base",
-        xl: "h-14 px-8 text-lg",
-        icon: "h-10 w-10",
-      },
+        size: {
+            xs: "h-7 px-2 text-xs",
+            sm: "h-8 px-3 text-sm",
+            default: "h-10 px-4 text-sm",
+            lg: "h-12 px-6 text-base",
+            xl: "h-14 px-8 text-lg",
+            icon: "h-10 w-10",
+    },
     },
     defaultVariants: {
       variant: "default",
@@ -51,5 +48,4 @@ const Button = React.forwardRef(({ className, variant, size, asChild = false, ..
 })
 Button.displayName = "Button"
 
-// eslint-disable-next-line react-refresh/only-export-components
 export { Button, buttonVariants }
