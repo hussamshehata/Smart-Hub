@@ -13,6 +13,7 @@ import ProductDetails from "./pages/ProductDetails.jsx";
 import ShoppingCartPage from "./pages/ShoppingCartPage.jsx";
 import PostDetails from "./pages/PostDetails.jsx";
 import AdminDashboard from "./Components/Dashboard/AdminTable.jsx";
+import Mobiles from "@/pages/shop/mobiles/Mobiles.jsx";
 
 
 function App() {
@@ -30,9 +31,7 @@ function App() {
                     <Route path="blog" element={<Blog />} />
                     <Route path="Post" element={<PostDetails />} />
                     <Route path="cart" element={<ShoppingCartPage />} />
-
-
-
+                    <Route path="shop/mobiles" element={<Mobiles />} />
 
 
 
