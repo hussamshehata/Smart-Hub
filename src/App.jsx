@@ -15,6 +15,7 @@ import PostDetails from "./pages/PostDetails.jsx";
 import AdminDashboard from "./Components/Dashboard/AdminTable.jsx";
 import CheckoutPage from "./pages/CheckoutPage.jsx";
 import OrderCompletePage from "./pages/OrderCompletePage.jsx";
+import Mobiles from "@/pages/shop/mobiles/Mobiles.jsx";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
 
 
 
+                    <Route path="shop/mobiles" element={<Mobiles />} />
 
 
 
