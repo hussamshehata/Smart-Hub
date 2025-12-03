@@ -13,6 +13,8 @@ import ProductDetails from "./pages/ProductDetails.jsx";
 import ShoppingCartPage from "./pages/ShoppingCartPage.jsx";
 import PostDetails from "./pages/PostDetails.jsx";
 import AdminDashboard from "./Components/Dashboard/AdminTable.jsx";
+import CheckoutPage from "./pages/CheckoutPage.jsx";
+import OrderCompletePage from "./pages/OrderCompletePage.jsx";
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
                     <Route path="blog" element={<Blog />} />
                     <Route path="Post" element={<PostDetails />} />
                     <Route path="cart" element={<ShoppingCartPage />} />
+                    <Route path="checkout" element={<CheckoutPage />} />
+                    <Route path="ordercomplete" element={<OrderCompletePage />} />
 
 
 
@@ -42,7 +46,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Signup />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/dashboard/products" element={< AdminDashboard/>} />
+                <Route path="/dashboard/products" element={< AdminDashboard />} />
             </Routes>
         </AnimatePresence>
     );

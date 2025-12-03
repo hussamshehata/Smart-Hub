@@ -4,12 +4,13 @@ import { Minus, Plus, X } from 'lucide-react';
 import { Button } from "@/Components/ui/button.jsx";
 import { Input } from '@/Components/ui/input.jsx';
 import { decreaseQuantity, increaseQuantity, removeFromCart, selectCartItems, selectCartTotalPrice, selectCouponCode, selectShippingCost, selectShippingMethod, setCouponCode, setShippingMethod } from '@/redux/cartSlice';
-
+import { useNavigate } from "react-router-dom";
 
 
 export default function ShoppingCartPage() {
   const dispatch = useDispatch();
-  
+  const navigate = useNavigate();
+
   // Get cart data from Redux store
   const cartItems = useSelector(selectCartItems);
   const subtotal = useSelector(selectCartTotalPrice);
@@ -107,7 +108,7 @@ export default function ShoppingCartPage() {
                       <div className="flex flex-col">
                         <h3 className="font-semibold text-sm mb-1">{item.name}</h3>
                         <p className="text-xs text-gray-500 mb-0.5">Color: {item.color}</p>
-                        <button 
+                        <button
                           onClick={() => removeItem(item.id)}
                           className="text-xs text-gray-400 hover:text-red-600 flex items-center mt-2"
                         >
@@ -116,7 +117,7 @@ export default function ShoppingCartPage() {
                         </button>
                       </div>
                     </div>
-                    
+
                     <div className="col-span-3 flex items-center justify-center">
                       <div className="inline-flex items-center border rounded overflow-hidden">
                         <button
@@ -134,11 +135,11 @@ export default function ShoppingCartPage() {
                         </button>
                       </div>
                     </div>
-                    
+
                     <div className="col-span-2 text-center text-sm">
                       ${item.price.toFixed(2)}
                     </div>
-                    
+
                     <div className="col-span-2 text-right font-semibold text-base">
                       ${(item.price * item.quantity).toFixed(2)}
                     </div>
@@ -160,8 +161,8 @@ export default function ShoppingCartPage() {
                   onChange={(e) => setCouponInput(e.target.value)}
                   className="flex-1 h-11 border-gray-300"
                 />
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   className="h-11 px-6 font-medium border-gray-300"
                   onClick={handleApplyCoupon}
                   disabled={!couponInput.trim()}
@@ -176,19 +177,17 @@ export default function ShoppingCartPage() {
           <div className="lg:col-span-1">
             <div className="bg-white rounded-lg p-6 sticky top-8">
               <h3 className="font-bold text-lg mb-5">Cart summary</h3>
-              
+
               {/* Shipping Options */}
               <div className="space-y-3 mb-5">
-                <label 
-                  className={`flex items-center justify-between p-4 rounded-lg cursor-pointer ${
-                    shippingMethod === 'free' ? 'border-2 border-black' : 'border border-gray-300 hover:border-gray-400'
-                  }`}
+                <label
+                  className={`flex items-center justify-between p-4 rounded-lg cursor-pointer ${shippingMethod === 'free' ? 'border-2 border-black' : 'border border-gray-300 hover:border-gray-400'
+                    }`}
                   onClick={() => handleShippingChange('free', 0)}
                 >
                   <div className="flex items-center">
-                    <div className={`w-5 h-5 rounded-full border-2 mr-3 flex items-center justify-center ${
-                      shippingMethod === 'free' ? 'border-black' : 'border-gray-300'
-                    }`}>
+                    <div className={`w-5 h-5 rounded-full border-2 mr-3 flex items-center justify-center ${shippingMethod === 'free' ? 'border-black' : 'border-gray-300'
+                      }`}>
                       {shippingMethod === 'free' && (
                         <div className="w-2.5 h-2.5 rounded-full bg-black"></div>
                       )}
@@ -197,17 +196,15 @@ export default function ShoppingCartPage() {
                   </div>
                   <span className="font-semibold text-sm">$0.00</span>
                 </label>
-                
-                <label 
-                  className={`flex items-center justify-between p-4 rounded-lg cursor-pointer ${
-                    shippingMethod === 'express' ? 'border-2 border-black' : 'border border-gray-300 hover:border-gray-400'
-                  }`}
+
+                <label
+                  className={`flex items-center justify-between p-4 rounded-lg cursor-pointer ${shippingMethod === 'express' ? 'border-2 border-black' : 'border border-gray-300 hover:border-gray-400'
+                    }`}
                   onClick={() => handleShippingChange('express', 15)}
                 >
                   <div className="flex items-center">
-                    <div className={`w-5 h-5 rounded-full border-2 mr-3 flex items-center justify-center ${
-                      shippingMethod === 'express' ? 'border-black' : 'border-gray-300'
-                    }`}>
+                    <div className={`w-5 h-5 rounded-full border-2 mr-3 flex items-center justify-center ${shippingMethod === 'express' ? 'border-black' : 'border-gray-300'
+                      }`}>
                       {shippingMethod === 'express' && (
                         <div className="w-2.5 h-2.5 rounded-full bg-black"></div>
                       )}
@@ -216,17 +213,15 @@ export default function ShoppingCartPage() {
                   </div>
                   <span className="font-semibold text-sm">+$15.00</span>
                 </label>
-                
-                <label 
-                  className={`flex items-center justify-between p-4 rounded-lg cursor-pointer ${
-                    shippingMethod === 'pickup' ? 'border-2 border-black' : 'border border-gray-300 hover:border-gray-400'
-                  }`}
+
+                <label
+                  className={`flex items-center justify-between p-4 rounded-lg cursor-pointer ${shippingMethod === 'pickup' ? 'border-2 border-black' : 'border border-gray-300 hover:border-gray-400'
+                    }`}
                   onClick={() => handleShippingChange('pickup', 21)}
                 >
                   <div className="flex items-center">
-                    <div className={`w-5 h-5 rounded-full border-2 mr-3 flex items-center justify-center ${
-                      shippingMethod === 'pickup' ? 'border-black' : 'border-gray-300'
-                    }`}>
+                    <div className={`w-5 h-5 rounded-full border-2 mr-3 flex items-center justify-center ${shippingMethod === 'pickup' ? 'border-black' : 'border-gray-300'
+                      }`}>
                       {shippingMethod === 'pickup' && (
                         <div className="w-2.5 h-2.5 rounded-full bg-black"></div>
                       )}
@@ -254,9 +249,10 @@ export default function ShoppingCartPage() {
                 <span className="font-bold text-2xl">${total.toFixed(2)}</span>
               </div>
 
-              <Button 
+              <Button
                 className="w-full bg-black hover:bg-gray-900 text-white h-12 text-base font-medium rounded-lg"
                 disabled={cartItems.length === 0}
+                onClick={() => navigate("checkout")}
               >
                 Checkout
               </Button>
