@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Shipping() {
     return (
-        <div className="px-4 py-8 mt-8 ml-8 border border-black shadow w-2/5">
+        <div className="px-4 mx-auto py-8 mt-8 rounded-md shadow border border-gray-300 w-3/5 ">
             <form>
                 <h6 className="font-medium text-xl mb-4">Shipping Address</h6>
 
