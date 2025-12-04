@@ -1,16 +1,21 @@
 import React, { useState, useRef, useEffect } from "react";
-import { User, } from "lucide-react";
+import {LogOut, User,} from "lucide-react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "@/redux/UserSlice.js";
 import { motion, AnimatePresence } from "framer-motion";
+
+
 
 export default function UserDropdown() {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
     const dispatch = useDispatch();
     const user = useSelector((state) => state.user.user);
-
+    const handleLogout = () => {
+            dispatch(logout());
+            window.location.href = "/"; // redirect after logout
+        };
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -58,7 +63,13 @@ export default function UserDropdown() {
                                 </Link>
                             </>
                         )}
-
+                        <button
+                            onClick={handleLogout}
+                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                        >
+                            <LogOut size={16} className="inline mr-2" />
+                            Logout
+                        </button>
                         {user && (
                             <>
                                 {user.isAdmin && (

@@ -3,10 +3,10 @@ import dotenv from "dotenv";
 import cors from "cors";
 import morgan from "morgan";
 import connectDB from "./config/database.js";
-import errorHandler from "./middleware/errorHandler.js";
-import { logger } from "./middleware/logger.js";
-import notFound from "./middleware/notFound.js";
-
+import errorHandler from "./middlewares/errorHandler.js";
+import { logger } from "./middlewares/logger.js";
+import notFound from "./middlewares/notFound.js";
+import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
 
@@ -16,12 +16,21 @@ await connectDB();
 const app = express();
 
 // -------------------- MIDDLEWARE --------------------
-app.use(cors());
+app.use(
+    cors( {
+        origin: "http://localhost:5173",   // frontend URL
+        credentials: true,                 // allow cookies/auth
+        methods: ["GET", "POST", "PUT", "DELETE"],
+        allowedHeaders: ["Content-Type", "Authorization"],
+    })
+);
+
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(logger); //  logger should be BEFORE routes
 
 // -------------------- ROUTES --------------------
+app.use("/auth", authRoutes);
 app.use("/services/users", userRoutes);
 app.use("/services/cart", cartRoutes);
 
