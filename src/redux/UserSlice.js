@@ -16,10 +16,11 @@ const userSlice = createSlice({
         },
 
         // when user logs out
-        logout: (state) => {
-            state.userInfo = null;
-            state.isLoggedIn = false;
-        },
+        logout(state) {
+            state.user = null;
+            localStorage.removeItem("token");
+            sessionStorage.removeItem("token");
+        }
     },
 });
 

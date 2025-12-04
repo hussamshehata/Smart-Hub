@@ -39,7 +39,8 @@ export default function Login() {
             setLoading(true);
 
             // Call backend
-            const data = await loginService(email, password);
+            const data = await loginService(email.trim(), password.trim());
+
 
             // Choose storage
             if (rememberMe) {
