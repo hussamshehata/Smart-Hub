@@ -11,9 +11,12 @@ import userRoutes from "./routes/userRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
 
 dotenv.config();
-connectDB();
 
 const app = express();
+
+connectDB().catch(err => console.error('DB Error:', err));
+
+
 
 // -------------------- MIDDLEWARE --------------------
 app.use(
@@ -21,7 +24,7 @@ app.use(
         origin: [
             "http://localhost:3000",
             "http://localhost:5173",
-            "https://smart-hub-blond.vercel.app" // ⚠️ Add your actual frontend URL
+            "https://smart-hub-blond.vercel.app" //
         ],
         credentials: false, // Set to false if you don't need cookies
         methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
