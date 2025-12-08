@@ -29,8 +29,6 @@ app.use(
     })
 );
 
-// Add this OPTIONS handler BEFORE your routes
-app.options('*', cors());
 
 app.use(express.json());
 app.use(morgan("dev"));
