@@ -11,15 +11,14 @@ import userRoutes from "./routes/userRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
 
 dotenv.config();
-await connectDB();
+connectDB();
 
 const app = express();
 
 // -------------------- MIDDLEWARE --------------------
 app.use(
-    cors( {
-        origin: "http://localhost:5173",   // frontend URL
-        credentials: true,                 // allow cookies/auth
+    cors({
+        origin: "*",
         methods: ["GET", "POST", "PUT", "DELETE"],
         allowedHeaders: ["Content-Type", "Authorization"],
     })
