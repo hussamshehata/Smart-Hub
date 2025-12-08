@@ -18,12 +18,12 @@ const app = express();
 // -------------------- MIDDLEWARE --------------------
 app.use(
     cors({
-        origin: "*",
+        origin: "https://smart-hub-blond.vercel.app/", // ⚠️ Replace with your actual frontend URL
+        credentials: true, // ✅ Add this to match withCredentials: true
         methods: ["GET", "POST", "PUT", "DELETE"],
         allowedHeaders: ["Content-Type", "Authorization"],
     })
 );
-
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(logger); //  logger should be BEFORE routes
