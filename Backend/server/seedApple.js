@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const Product = require('./models/product.js');
-const appleData = require('./data/apple.json');
+const Product = require('../models/product.js');
+const appleData = require('../data/apple.json');
 
 // Connect to MongoDB
 mongoose.connect('mongodb://127.0.0.1:27017/smart-hub', {
