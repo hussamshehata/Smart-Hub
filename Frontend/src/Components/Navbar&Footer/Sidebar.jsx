@@ -104,7 +104,7 @@ export default function CartSidebar({ isOpen, onClose }) {
                         </button>
                       </div>
                       <p className="text-gray-600 font-semibold mb-3">
-                        ${item.price.toFixed(2)}
+                        ${item.price}
                       </p>
                       <div className="flex items-center border rounded-md w-24">
                         <button

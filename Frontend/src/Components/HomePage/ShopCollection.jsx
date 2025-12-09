@@ -9,7 +9,7 @@ function ShopCollection () {
 
             <div className="grid gap-8 grid-cols-2 ">
 
-                <div className={`flex  flex-col  justify-end  gap-4  px-8  py-8  ${ShopCollectionData[0].height}`}
+                <div className={`flex  flex-col  justify-end  gap-4  px-8  py-8 max-h-full ${ShopCollectionData[0].height}`}
                 style={{ backgroundImage: `url(${ShopCollectionData[0].bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <p className="text-neutral-700  text-2xl">{ShopCollectionData[0].title}</p>
                     <Link to={"/shop/mobiles"} className="text-neutral-700  inline-flex  gap-2  w-max  border-b  border-neutral-700  pb-0.5  hover:text-primary-600  hover:border-primary-600">

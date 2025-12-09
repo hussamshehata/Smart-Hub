@@ -38,7 +38,7 @@ function PromoBanner() {
             (   
                 <>
                     <div className="w-full md:w-1/2">
-                        <img src="../..../assets/images/StayTuned.jpeg" alt="Promo" className=" w-full max-h-96 object-fit"/>
+                        <img src="https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817757/StayTuned_tlm2tw.jpg" alt="Promo" className=" w-full max-h-96 object-fit"/>
                     </div>
 
                     <div className="flex flex-col justify-center gap-4 w-full md:w-1/2 max-h-96 bg-[#ffab0066] p-10 md:p-20">

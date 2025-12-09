@@ -1,122 +1,110 @@
 [
-    {
-        "id": 1 ,
+    {   "id": 1 ,
         "name":"IPHONE 17 Pro Max" ,
         "description": "High-quality sound with active noise cancellation.",
-        "price": "1499.99$",
+        "price": 1499.99,
         "newArrival": false,
-        "soldCount": "20",
+        "soldCount": 20,
         "rating": 4,
-        "bgImage": "src/assets/images/Iphone17Pro.jpeg" 
+        "bgImage": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817658/0014451_iphone-17-pro-max_jef4tn.jpg" 
     },
-    {
-        "id": 2 ,
+    {   "id": 2 ,
         "name":"Smart Watch" ,
         "description": "Track your fitness and stay connected on the go.",
-        "price": "149.99$", 
+        "price": 149.99, 
         "newArrival": false,
-        "soldCount": "10",
+        "soldCount": 10,
         "rating": 5,
         "bgImage": "https://res.cloudinary.com/dmsvr8dnt/image/upload/v1760220178/smartwatch_of3d0s.jpg" 
     },
-    {
-        "id": 3 ,
+    {   "id": 3 ,
         "name":"Bluetooth Speaker" ,
         "description": "Portable speaker with deep bass and crystal sound.",
-        "price": "79.99$", 
+        "price": 79.99, 
         "newArrival": false,
-        "soldCount": "0", 
+        "soldCount": 0, 
         "rating" : 3, 
-        "bgImage": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" 
+        "bgImage": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
     },
-    {
-        "id": 4 ,
+    {   "id": 4 ,
         "name":"Wireless Earbuds" ,
         "description": "Premium sound quality with ergonomic design.",
-        "price": "199.99$", 
+        "price": 199.99, 
         "newArrival": false,
-        "soldCount": "15",
+        "soldCount": 15,
         "rating": 2,
         "bgImage": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80" 
     },
-    {
-        "id": 5 ,
+    {   "id": 5 ,
         "name":"Laptop Stand" ,
         "description": "Adjustable aluminum stand for better posture.",
-        "price": "49.99$", 
+        "price": 49.99, 
         "newArrival": false,
-        "soldCount": "20",
+        "soldCount": 20,
         "rating": 5,
-        "bgImage": "src/assets/images/LaptopStand.jpeg" 
+        "bgImage": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817757/LaptopStand_bkd9cl.jpg" 
     },
-    {
-        "id": 6 ,
+    {   "id": 6 ,
         "name":"Mechanical Keyboard" ,
         "description": "RGB backlit keyboard with tactile switches.",
-        "price": "129.99$",
+        "price": 129.99,
         "newArrival": false,
-        "soldCount": "6", 
+        "soldCount": 6, 
         "rating": 1, 
         "bgImage": "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=600&q=80" 
     },
-    {
-        "id": 7 ,
+    {   "id": 7 ,
         "name":"USB-C Hub" ,
         "description": "Multi-port hub with HDMI and USB 3.0 ports.",
-        "price": "39.99$",
+        "price": 39.99,
         "newArrival": false,
-        "soldCount": "3", 
+        "soldCount": 3, 
         "rating" :4, 
-        "bgImage": "src/assets/images/USB-C-Hub.jpeg" 
+        "bgImage": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817758/USB-C-Hub_e0iefv.jpg" 
     },
-    {
-        "id": 8 ,
+    {   "id": 8 ,
         "name":"Webcam HD" ,
         "description": "1080p webcam with built-in microphone.",
-        "price": "89.99$",
+        "price": 89.99,
         "newArrival": false,
-        "soldCount": "0", 
+        "soldCount": 0, 
         "rating": 3, 
-        "bgImage": "src/assets/images/HDWebcam.jpeg" 
+        "bgImage": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817757/HDWebcam_vdgcyx.jpg"
     },
-    {
-        "id": 9 ,
+    {   "id": 9 ,
         "name":"Gaming Mouse" ,
         "description": "High-precision optical sensor with RGB lighting.",
-        "price": "59.99$",
+        "price": 59.99,
         "newArrival": false,
-        "soldCount": "17",
+        "soldCount": 17,
         "rating": 5,
         "bgImage": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=600&q=80" 
     },
-    {
-        "id": 10 ,
+    {   "id": 10 ,
         "name":"Samsung Galaxy S24" ,
         "description": "Description",
-        "price": "1199$",
+        "price": 1199,
         "newArrival": false,
-        "soldCount": "20",
+        "soldCount": 20,
         "rating": 5,
-        "bgImage": "src/assets/images/SamsungGalaxyS24.jpeg" 
+        "bgImage": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817757/SamsungGalaxyS24_zv11dq.jpg"
     },
-    {
-        "id": 11 ,
+    {   "id": 11 ,
         "name":"Apple MacBook Air M2" ,
         "description": "Description",
-        "price": "1299$",
+        "price": 1299,
         "newArrival": false,
-        "soldCount": "15",
+        "soldCount": 15,
         "rating": 0,
-        "bgImage": "src/assets/images/MacBookAirM2.jpeg" 
+        "bgImage": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817235/MacBookAirM2_o8xa1o.jpg" 
     },
-    {
-        "id": 12 ,
+    {   "id": 12 ,
         "name":"Sony WH-1000XM5" ,
         "description": "Description",
-        "price": "299.99$",
+        "price": 299.99,
         "newArrival": false,
-        "soldCount": "11",
+        "soldCount": 11,
         "rating": 1,
-        "bgImage": "src/assets/images/SonyWH1000XM5.jpeg" 
+        "bgImage": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817757/SonyWH1000XM5_abk9iw.jpg"
     }
 ]
