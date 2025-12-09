@@ -1,26 +1,72 @@
 [
-  { 
-    "name": "Apple" ,
-    "image": "src/assets/images/Apple.jpg"
+  { "id": 1,
+    "name": "Apple",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764816910/Apple_cc6qcz.jpg",
+    "description": "Apple is an American technology company founded in 1976. It is known for premium devices such as the iPhone and MacBook, offering high performance, elegant design, and a seamless ecosystem across all products. Apple focuses heavily on innovation and user experience, making it one of the most trusted brands worldwide."
   },
-  { 
-    "name": "Samsung" ,
-    "image": "src/assets/images/Samsung.jpg"
+  { "id": 2,
+    "name": "Samsung",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817000/Samsung_zgdfp2.jpg",
+    "description": "Samsung is a South Korean company founded in 1938 and is one of the largest technology brands in the world. It is well-known for its Galaxy smartphones, powerful displays, and advanced electronic products. Samsung continues to innovate in mobile technology, wearables, and consumer electronics."
   },
-  { 
-    "name": "Oppo" ,
-    "image": "src/assets/images/Oppo.jpg"
+  { "id": 3,
+    "name": "Oppo",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817038/Oppo_jizomi.jpg",
+    "description": "Oppo is a Chinese smartphone manufacturer founded in 2004. The company is popular for its stylish designs and high-quality cameras, especially in the Reno and F series. Oppo is known for fast charging technology, reliable performance, and strong presence in the mid-range smartphone market."
   },
-  { 
-    "name": "Huawei" ,
-    "image": "src/assets/images/Huawei.jpg"
+  { "id": 4,
+    "name": "Huawei",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817068/Huawei_aaocy1.jpg",
+    "description": "Huawei is a global technology company founded in 1987 in China. It is recognized for its powerful smartphones, particularly the Mate and P series with advanced camera systems. Huawei also manufactures laptops, tablets, and smartwatches, and is a leader in telecommunications and network technologies."
   },
-  { 
-    "name": "Sony" ,
-    "image": "src/assets/images/Sony.jpg"
+  { "id": 5,
+    "name": "Sony",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817088/Sony_wqsnee.jpg",
+    "description": "Sony is a Japanese company founded in 1946, known for its high-quality electronics, cameras, and audio products. The Xperia smartphone line reflects Sony’s focus on premium design and advanced camera capabilities. Sony has a strong reputation for durability and cutting-edge technology."
   },
-  { 
-    "name": "Lenovo" ,
-    "image": "src/assets/images/Lenovo.jpg"
+  { "id": 6,
+    "name": "Lenovo",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817106/Lenovo_vhjn7x.jpg",
+    "description": "Lenovo is a Chinese multinational company founded in 1984 and is one of the world’s leading laptop manufacturers. It is famous for the ThinkPad series for business and the Legion lineup for gaming. Lenovo offers durable devices with strong performance and great value for the price."
+  },
+  { "id": 7,
+    "name": "Xiaomi",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1765246094/Xiaomi_kjrjx5.jpg",
+    "description": "Xiaomi is a Chinese electronics company founded in 2010. It became widely known for offering powerful smartphones at competitive prices, such as the Redmi and Mi series. Xiaomi has expanded into smart home products, wearables, and lifestyle gadgets, gaining fast global popularity."
+  },
+  { "id": 8,
+    "name": "Realme",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1765246094/Realme_m7y1gx.jpg",
+    "description": "Realme is a Chinese smartphone brand established in 2018. It focuses on delivering fast, stylish, and affordable phones targeting younger users. With strong performance and fast charging features, Realme has quickly become one of the fastest-growing smartphone brands worldwide."
+  },
+  { "id": 9,
+    "name": "Infinix",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1765246094/Infinix_ipjju8.jpg  ",
+    "description": "Infinix is a smartphone manufacturer founded in 2013 and known for producing budget-friendly and mid-range devices. The brand focuses on big batteries, fast charging, and large screens, making it popular in emerging markets and among users looking for high value at low prices."
+  },
+  { "id": 10,
+    "name": "Dell",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1765246094/dell_kfnvln.jpg",
+    "description": "Dell is an American company founded in 1984 and is one of the top laptop and PC manufacturers worldwide. The brand is known for the premium XPS lineup and the powerful Alienware gaming series. Dell focuses on performance, build quality, and long-lasting devices for work, education, and gaming."
+  },
+  { "id": 11,
+    "name": "HP",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1765246093/hp_lrgok1.jpg",
+    "description": "HP (Hewlett-Packard) is an American technology company founded in 1939. It is known for high-quality laptops, printers, and professional solutions. HP's Pavilion and Envy laptops are popular among students and professionals, while the Omen series targets gamers seeking powerful performance."
+  },
+  { "id": 12,
+    "name": "Acer",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1765246093/Acer_iynz1c.jpg",
+    "description": "Acer is a Taiwanese technology company founded in 1976. It is recognized for affordable and reliable laptops, including the Nitro and Predator gaming series. Acer laptops are widely used for education, gaming, and business, offering good performance at competitive prices."
+  },
+  { "id": 13,
+    "name": "ASUS",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1765246093/Asus_nds6dp.jpg",
+    "description": "ASUS is a Taiwanese company founded in 1989, famous for its laptops and gaming hardware. The ROG series targets gamers, while ZenBook and VivoBook provide portable and professional solutions. ASUS is known for innovation, quality build, and strong performance."
+  },
+  { "id": 14,
+    "name": "MSI",
+    "image": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1765285291/MSI_swdiwb.jpg",
+    "description": "MSI (Micro-Star International) is a Taiwanese company founded in 1986, specializing in gaming laptops, desktops, and PC components. Its gaming laptops are highly regarded for performance, cooling systems, and reliability. MSI is a top choice for gamers and creators worldwide."
   }
 ]
