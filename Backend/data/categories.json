@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Laptops",
+    "attributes": 
+
+    { "id": 1,
+      "name": "MacBook Pro",
+      "brand": "Apple",
+      "price": 1999,
+      "description": "Apple MacBook Pro 14-inch with M1 Pro chip, designed for high-performance tasks like video editing and programming.",
+      "storage": "512GB",
+      "processor": "M1",
+      "screenSize": "14.2 inch"
+    }
+  },
+
+  {
+    "name": "Phones",
+    "attributes": 
+
+    { "id": 1,
+      "name": "Samsung Galaxy S24 Ultra",
+      "brand": "Samsung",
+      "price": 1199,
+      "storage": "512GB",
+      "camera": "200MP",
+      "battery": "5000 mAh",
+      "screenSize": "6.5 inch"
+    }
+  },
+
+  {
+    "name": "Accessories",
+    "attributes": 
+
+    { "id": 1,
+      "name": "Mouse",
+      "brand": "Logitech",
+      "price": 79,
+      "CompatibleWith": "PC/Laptop",
+      "Connectivity": "Wireless",
+      "description" : "Logitech C920, high-definition webcam with clear video quality and built-in stereo microphone."
+    }
+  }
+]
