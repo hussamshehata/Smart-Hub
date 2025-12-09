@@ -1,7 +1,7 @@
 import React from "react";
 import AddToCartButton from "../All-Buttons/AddToCartButton";
 import FavoriteButton from "../All-Buttons/FavoriteButton";
-export const ProductCard = ({ product ,productid }) => {
+export const ProductCard = ({ product }) => {
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group">
       <div
@@ -13,7 +13,7 @@ export const ProductCard = ({ product ,productid }) => {
             {product.brand}
           </span>
        
-          <FavoriteButton productId={product.id}/>
+          <FavoriteButton product={product}/>
         </div>
 
         
