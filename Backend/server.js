@@ -9,6 +9,8 @@ import notFound from "./middlewares/notfound.js";
 import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
+import categoryRoutes from './routes/categoryRoutes.js';
+
 
 dotenv.config();
 
@@ -41,6 +43,7 @@ app.use(logger); //  logger should be BEFORE routes
 app.use("/auth", authRoutes);
 app.use("/services/users", userRoutes);
 app.use("/services/cart", cartRoutes);
+app.use('/api/categories', categoryRoutes);
 
 app.get("/", (req, res) => {
     res.send("Smart Hub backend is running 🚀");
