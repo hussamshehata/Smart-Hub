@@ -30,7 +30,7 @@ function NewArrivals() {
                                     </div>
                                 </div>
 
-                                <div className="opacity-0  group-hover:opacity-100  transition-opacity  duration-300  cursor-pointer">
+                                <div className="flex justify-center opacity-0  group-hover:opacity-100  transition-opacity  duration-300  cursor-pointer">
                                     <AddToCartButton product={product} />
                                 </div>
 

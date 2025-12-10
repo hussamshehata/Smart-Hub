@@ -21,7 +21,7 @@ function AddToCartButton({product}) {
     }
 
     return (
-        <Button variant="default" size="default" onClick={handleClick} >
+        <Button variant="default" size="default" className="w-40" onClick={handleClick} >
             {isInCart? "Added to Cart" : "Add to Cart"}
         </Button>
     );
