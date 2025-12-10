@@ -9,7 +9,7 @@ import notFound from "./middlewares/notfound.js";
 import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
-//import categoryRoutes from './routes/categoryRoutes.js';
+
 
 
 dotenv.config();
