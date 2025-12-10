@@ -13,7 +13,7 @@ export default function FavoriteButton({product}) {
     };
 
     return (
-        <div onClick= {handleClick} className="bg-white/80 rounded-full p-2">
+        <div onClick= {handleClick} className="bg-white/80 rounded-full p-2 cursor-pointer">
             <Heart 
                 size={24}
                 fill={isFavorite ? "red" : "none"}

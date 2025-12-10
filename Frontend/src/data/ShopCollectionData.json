@@ -3,7 +3,7 @@
         "id": 1 ,
         "title": "Laptops" ,
         "link": "/shop/laptops" ,
-        "bgImage": "src/assets/images/MacBookAirM2.jpeg" ,
+        "bgImage": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817235/MacBookAirM2_o8xa1o.jpg" ,
         "height": "h-160",
         "width": "w-66"
     },
@@ -11,7 +11,7 @@
         "id": 2 ,
         "title": "Mobiles" ,
         "link": "/shop/mobiles" ,
-        "bgImage": "src/assets/images/download2.jpeg" ,
+        "bgImage": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817308/download2_oehe8j.jpg" ,
         "height": "h-80",
         "width": "w-72"
     },
@@ -19,7 +19,7 @@
         "id": 3 ,
         "title": "Accessories" ,
         "link": "/shop/accessories" ,
-        "bgImage": "src/assets/images/AirPod.jpeg" ,
+        "bgImage": "https://res.cloudinary.com/dbaqz7nim/image/upload/v1764817357/AirPod_afun2m.jpg" ,
         "height": "h-80",
         "width": "w-72"
     }

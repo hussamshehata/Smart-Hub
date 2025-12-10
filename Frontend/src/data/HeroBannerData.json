@@ -4,8 +4,8 @@
     "description": "Your one-stop shop for all things tech.",
     "images" :
     [
-        "src/assets/images/background.jpeg",
-        "src/assets/images/background.jpeg",
-        "src/assets/images/background.jpeg"
+        "https://res.cloudinary.com/dbaqz7nim/image/upload/v1760885739/hero1_tft7te.jpg",
+        "https://res.cloudinary.com/dbaqz7nim/image/upload/v1760885739/hero1_tft7te.jpg",
+        "https://res.cloudinary.com/dbaqz7nim/image/upload/v1760885739/hero1_tft7te.jpg"
     ]
 }

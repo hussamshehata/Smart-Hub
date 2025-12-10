@@ -13,7 +13,7 @@ function BestSeller() {
         if (!soldCount) return null;
         const step = 10;
         const rounded = Math.floor(soldCount / step) * step;
-        return `${rounded}+ Sold`;
+        return `+${rounded} Sold`;
     }
 
     const sortedProducts= products.sort((a,b) => b.soldCount - a.soldCount);
@@ -27,7 +27,7 @@ function BestSeller() {
                     {visibleProducts.map((product) => (
                         <div key={product.id} className="flex  flex-col  gap-2  text-neutral-700 bg-white w-64 rounded-lg shadow-xl hover:shadow-[0_0_25px_rgba(0,0,0,0.2)] transition-shadow duration-300 group ">
 
-                            <div className="flex  flex-col  justify-between  rounded-t-lg h-64  w-64  p-4   group  relative "
+                            <div className="flex  flex-col  justify-between rounded-t-lg h-64  w-64  p-4   group  relative "
                                 style={{ backgroundImage: `url(${product.bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                                 
                                 <div className="flex justify-between">
@@ -39,18 +39,20 @@ function BestSeller() {
                                     
                                 </div>
                                 
-                                <div className="opacity-0  group-hover:opacity-100  transition-opacity  duration-300  cursor-pointer">
+                                <div className=" flex justify-center opacity-0  group-hover:opacity-100  transition-opacity  duration-300  cursor-pointer">
                                     <AddToCartButton product={product} />
                                 </div>
 
                             </div>
                             
-                            <div className="p-2">
-                                <RatingStars rating={product.rating} />
+                            <div className="p-2 ">
+                                <div className="cursor-pointer">
+                                    <RatingStars rating={product.rating} />
+                                </div>
 
                                 <p className="text-1xl font-bold">{product.name}</p>
                                 <p className="text-1xl">{product.description}</p>
-                                <p className="text-1xl font-bold">{product.price}$</p>
+                                <p className="text-1xl font-bold ">{product.price}$</p>
                             </div>
                         </div>
                     ))}
