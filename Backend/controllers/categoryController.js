@@ -1,5 +1,5 @@
 // server/controllers/categoryController.js
-import category from '../models/category.js';
+import category from '../models/Category.js';
 
 // GET all categories
 export const getCategories = async (req, res) => {
