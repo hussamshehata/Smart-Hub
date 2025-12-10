@@ -19,12 +19,12 @@ import Mobiles from "./pages/shop/mobiles/Mobiles.jsx";
 import Laptops from "./pages/shop/laptops/Laptops.jsx";
 import Accessories from "./pages/accessories/Accessories.jsx";
 
-
 function App() {
     const location = useLocation();
 
     return (
         <AnimatePresence mode="wait">
+
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<Home />} />
@@ -54,6 +54,7 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/dashboard/products" element={< AdminDashboard />} />
             </Routes>
+
         </AnimatePresence>
     );
 }

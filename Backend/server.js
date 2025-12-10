@@ -41,8 +41,8 @@ app.use(logger); //  logger should be BEFORE routes
 
 // -------------------- ROUTES --------------------
 app.use("/auth", authRoutes);
-app.use("/services/users", userRoutes);
-app.use("/services/cart", cartRoutes);
+app.use("/auth/users", userRoutes);
+app.use("/auth/cart", cartRoutes);
 app.use('/api/categories', categoryRoutes);
 
 app.get("/", (req, res) => {
