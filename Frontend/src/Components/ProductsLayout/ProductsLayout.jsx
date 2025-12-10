@@ -70,7 +70,7 @@ export default function ProductsLayout({
     
       const matchesStorage =
         selectedStorage.length === 0 ||
-        selectedStorage.includes(product.storage?.toString());
+        selectedStorage.includes(product.storageOptions?.toString());
 
     
       const matchesRam =

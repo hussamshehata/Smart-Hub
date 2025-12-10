@@ -16,6 +16,8 @@ import AdminDashboard from "./Components/Dashboard/AdminTable.jsx";
 import CheckoutPage from "./pages/CheckoutPage.jsx";
 import OrderCompletePage from "./pages/OrderCompletePage.jsx";
 import Mobiles from "./pages/shop/mobiles/Mobiles.jsx";
+import Laptops from "./pages/shop/laptops/Laptops.jsx";
+import Accessories from "./pages/accessories/Accessories.jsx";
 
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
 
 
                     <Route path="shop/mobiles" element={<Mobiles />} />
+                    <Route path="shop/laptops" element={<Laptops />} />
+                    <Route path="shop/accessories" element={<Accessories />} />
 
 
 

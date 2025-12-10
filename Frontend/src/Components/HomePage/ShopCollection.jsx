@@ -12,7 +12,7 @@ function ShopCollection () {
                 <div className={`flex  flex-col  justify-end  gap-4  px-8  py-8 max-h-full ${ShopCollectionData[0].height}`}
                 style={{ backgroundImage: `url(${ShopCollectionData[0].bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <p className="text-neutral-700  text-2xl">{ShopCollectionData[0].title}</p>
-                    <Link to={"/shop/mobiles"} className="text-neutral-700  inline-flex  gap-2  w-max  border-b  border-neutral-700  pb-0.5  hover:text-primary-600  hover:border-primary-600">
+                    <Link to={"/shop/laptops"} className="text-neutral-700  inline-flex  gap-2  w-max  border-b  border-neutral-700  pb-0.5  hover:text-primary-600  hover:border-primary-600">
                         Collection 
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
                     </Link>
