@@ -35,7 +35,7 @@ app.use(
 );
 
 // Add this AFTER the cors middleware to handle preflight
-
+app.options('*', cors());
 
 app.use(express.json());
 app.use(morgan("dev"));
@@ -45,7 +45,7 @@ app.use(logger); //  logger should be BEFORE routes
 app.use("/auth", authRoutes);
 app.use("/services/users", userRoutes);
 app.use("/services/cart", cartRoutes);
-
+app.use('/services/categories', categoryRoutes);
 
 app.get("/", (req, res) => {
     res.send("Smart Hub backend is running 🚀");
