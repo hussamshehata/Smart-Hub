@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create Axios instance
 const api = axios.create({
-    baseURL: "https://smart-hub-server.vercel.app", // your backend URL
+    baseURL: "https://smart-hub-server.vercel.app/api/v1", // your backend URL
     withCredentials: false, // no cookies needed
     headers: {
         "Content-Type": "application/json",
