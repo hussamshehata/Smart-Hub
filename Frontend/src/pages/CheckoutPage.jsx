@@ -66,7 +66,7 @@ export default function CheckoutPage() {
                 <div className="ml-[150px] lg:ml-[200px] w-3/5 lg:w-2/5 mt-6 mb-8">
                     <Button
                         className=" w-full bg-black hover:bg-gray-900 text-white h-12 text-base font-medium rounded-lg"
-                        onClick={() => navigate("ordercomplete")}
+                        onClick={() => navigate("order complete")}
                     >
                         Place Order
                     </Button>

@@ -20,11 +20,7 @@ dotenv.config();
 const app = express();
 
 // -------------------- DB --------------------
-connectDB().catch(err => {
-    console.error("DB Error:", err);
-    process.exit(1);
-});
-
+await connectDB();
 // -------------------- MIDDLEWARE --------------------
 app.use(helmet());
 app.use(compression());
