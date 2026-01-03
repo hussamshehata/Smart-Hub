@@ -1,6 +1,6 @@
 // controllers/cartController.js
-import Cart from "../models/Cart.js";
-import Product from "../models/Product.js";
+import Cart from "../models/cart.js";
+import Product from "../models/product.js";
 import mongoose from "mongoose";
 
 // GET user's cart (authenticated user only)
