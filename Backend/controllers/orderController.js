@@ -1,7 +1,7 @@
 // controllers/orderController.js
-import Order from '../models/Order.js';
-import Cart from '../models/Cart.js';
-import Product from '../models/Product.js';
+import order from '../models/order.js';
+import cart from '../models/cart.js';
+import product from '../models/product.js';
 import mongoose from 'mongoose';
 
 // POST create order from cart (checkout)
