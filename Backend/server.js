@@ -14,7 +14,7 @@ import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
-
+import orderRoutes from "./routes/orderRoutes.js";
 dotenv.config();
 
 const app = express();
@@ -45,7 +45,9 @@ app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/cart", cartRoutes);
 app.use("/api/v1/categories", categoryRoutes);
+app.use("/api/v1/orders", orderRoutes);
 
+// Health check route
 app.get("/", (req, res) => {
     res.send("Smart Hub backend is running 🚀");
 });
