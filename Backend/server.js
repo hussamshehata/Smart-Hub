@@ -46,7 +46,6 @@ app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/cart", cartRoutes);
 app.use("/api/v1/categories", categoryRoutes);
 app.use("/api/v1/orders", orderRoutes);
-
 // Health check route
 app.get("/", (req, res) => {
     res.send("Smart Hub backend is running 🚀");
