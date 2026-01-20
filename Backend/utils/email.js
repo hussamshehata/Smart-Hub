@@ -113,85 +113,85 @@ export const sendPasswordResetEmail = async (email, token) => {
 };
 
 // Send order confirmation email
-export const sendOrderConfirmationEmail = async (email, orderData) => {
-    try {
-        const transporter = createTransporter();
-
-        const mailOptions = {
-            from: process.env.EMAIL_FROM,
-            to: email,
-            subject: `Order Confirmation - ${orderData.orderNumber}`,
-            html: `
-                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-                    <h2 style="color: #333;">Order Confirmation</h2>
-                    <p>Thank you for your order!</p>
-                    <div style="background-color: #f5f5f5; padding: 20px; border-radius: 5px; margin: 20px 0;">
-                        <h3 style="margin-top: 0;">Order #${orderData.orderNumber}</h3>
-                        <p><strong>Total:</strong> $${orderData.total.toFixed(2)}</p>
-                        <p><strong>Status:</strong> ${orderData.status}</p>
-                    </div>
-                    <p>We'll send you another email when your order ships.</p>
-                    <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
-                    <p style="color: #999; font-size: 12px;">
-                        This is an automated email, please do not reply.
-                    </p>
-                </div>
-            `
-        };
-
-        await transporter.sendMail(mailOptions);
-        console.log(`✅ Order confirmation email sent to ${email}`);
-
-    } catch (error) {
-        console.error('Error sending order confirmation email:', error);
-        throw new Error('Failed to send order confirmation email');
-    }
-};
-
-// Send welcome email
-export const sendWelcomeEmail = async (email, name) => {
-    try {
-        const transporter = createTransporter();
-
-        const mailOptions = {
-            from: process.env.EMAIL_FROM,
-            to: email,
-            subject: 'Welcome to Our Store!',
-            html: `
-                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-                    <h2 style="color: #333;">Welcome, ${name}! 🎉</h2>
-                    <p>We're excited to have you on board!</p>
-                    <p>Your account has been successfully created. You can now:</p>
-                    <ul>
-                        <li>Browse our products</li>
-                        <li>Add items to your cart</li>
-                        <li>Track your orders</li>
-                        <li>Save your favorite items</li>
-                    </ul>
-                    <div style="margin: 30px 0;">
-                        <a href="${process.env.FRONTEND_URL}" 
-                           style="background-color: #4CAF50; 
-                                  color: white; 
-                                  padding: 12px 30px; 
-                                  text-decoration: none; 
-                                  border-radius: 5px;
-                                  display: inline-block;">
-                            Start Shopping
-                        </a>
-                    </div>
-                    <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
-                    <p style="color: #999; font-size: 12px;">
-                        This is an automated email, please do not reply.
-                    </p>
-                </div>
-            `
-        };
-
-        await transporter.sendMail(mailOptions);
-        console.log(`✅ Welcome email sent to ${email}`);
-
-    } catch (error) {
-        console.error('Error sending welcome email:', error);
-        // Don't throw error for welcome email
-    }
-};
+// export const sendOrderConfirmationEmail = async (email, orderData) => {
+//     try {
+//         const transporter = createTransporter();
+//
+//         const mailOptions = {
+//             from: process.env.EMAIL_FROM,
+//             to: email,
+//             subject: `Order Confirmation - ${orderData.orderNumber}`,
+//             html: `
+//                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+//                     <h2 style="color: #333;">Order Confirmation</h2>
+//                     <p>Thank you for your order!</p>
+//                     <div style="background-color: #f5f5f5; padding: 20px; border-radius: 5px; margin: 20px 0;">
+//                         <h3 style="margin-top: 0;">Order #${orderData.orderNumber}</h3>
+//                         <p><strong>Total:</strong> $${orderData.total.toFixed(2)}</p>
+//                         <p><strong>Status:</strong> ${orderData.status}</p>
+//                     </div>
+//                     <p>We'll send you another email when your order ships.</p>
+//                     <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+//                     <p style="color: #999; font-size: 12px;">
+//                         This is an automated email, please do not reply.
+//                     </p>
+//                 </div>
+//             `
+//         };
+//
+//         await transporter.sendMail(mailOptions);
+//         console.log(`✅ Order confirmation email sent to ${email}`);
+//
+//     } catch (error) {
+//         console.error('Error sending order confirmation email:', error);
+//         throw new Error('Failed to send order confirmation email');
+//     }
+// };
+//
+// // Send welcome email
+// export const sendWelcomeEmail = async (email, name) => {
+//     try {
+//         const transporter = createTransporter();
+//
+//         const mailOptions = {
+//             from: process.env.EMAIL_FROM,
+//             to: email,
+//             subject: 'Welcome to Our Store!',
+//             html: `
+//                 <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+//                     <h2 style="color: #333;">Welcome, ${name}! 🎉</h2>
+//                     <p>We're excited to have you on board!</p>
+//                     <p>Your account has been successfully created. You can now:</p>
+//                     <ul>
+//                         <li>Browse our products</li>
+//                         <li>Add items to your cart</li>
+//                         <li>Track your orders</li>
+//                         <li>Save your favorite items</li>
+//                     </ul>
+//                     <div style="margin: 30px 0;">
+//                         <a href="${process.env.FRONTEND_URL}"
+//                            style="background-color: #4CAF50;
+//                                   color: white;
+//                                   padding: 12px 30px;
+//                                   text-decoration: none;
+//                                   border-radius: 5px;
+//                                   display: inline-block;">
+//                             Start Shopping
+//                         </a>
+//                     </div>
+//                     <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+//                     <p style="color: #999; font-size: 12px;">
+//                         This is an automated email, please do not reply.
+//                     </p>
+//                 </div>
+//             `
+//         };
+//
+//         await transporter.sendMail(mailOptions);
+//         console.log(`✅ Welcome email sent to ${email}`);
+//
+//     } catch (error) {
+//         console.error('Error sending welcome email:', error);
+//         // Don't throw error for welcome email
+//     }
+// };
