@@ -1,6 +1,6 @@
 // middleware/auth.js
 import jwt from "jsonwebtoken";
-import User from "../models/user.js";
+import User from "../models/User.js";
 import rateLimit from "express-rate-limit";
 
 // ==================== AUTHENTICATION MIDDLEWARE ====================
