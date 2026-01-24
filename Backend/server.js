@@ -71,7 +71,7 @@ app.use(mongoSanitize()); // Removes $ and . from user input
 const allowedOrigins =
     process.env.NODE_ENV === "production"
         ? process.env.ALLOWED_ORIGINS?.split(",") || ["https://smart-hub-blond.vercel.app"]
-        : ["http://localhost:3000", "http://localhost:5173", "http://localhost:5174"];
+        : ["http://localhost:5000", "http://localhost:5173", "http://localhost:5174"];
 
 app.use(
     cors({
