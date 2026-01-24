@@ -23,12 +23,10 @@ import orderRoutes from "./routes/orderRoutes.js";
 dotenv.config();
 
 // Validate required environment variables
-const requiredEnvVars = ["MONGO_URI", "JWT_SECRET", "PORT"];
-const missingVars = requiredEnvVars.filter((varName) => !process.env[varName]);
+const requiredEnvVars = ["MONGO_URI", "JWT_SECRET"];
 
-if (missingVars.length > 0) {
-    console.error(`❌ Missing required environment variables: ${missingVars.join(", ")}`);
-    process.exit(1); // Exit if critical config is missing
+if (process.env.NODE_ENV !== "production") {
+    requiredEnvVars.push("PORT");
 }
 
 const app = express();
