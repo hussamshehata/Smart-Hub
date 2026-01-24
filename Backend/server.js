@@ -4,6 +4,7 @@ import cors from "cors";
 import morgan from "morgan";
 import helmet from "helmet";
 import compression from "compression";
+import cookieParser from 'cookie-parser';
 
 import connectDB from "./config/database.js";
 import errorHandler from "./middlewares/errorHandler.js";
@@ -39,6 +40,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 app.use(logger);
+app.use(cookieParser());
 
 // -------------------- ROUTES --------------------
 app.use("/api/v1/auth", authRoutes);
