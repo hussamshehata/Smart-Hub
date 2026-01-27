@@ -2,7 +2,7 @@
 import User from "../models/user.js";
 import jwt from "jsonwebtoken";
 import crypto from "crypto";
-// import { sendVerificationEmail, sendPasswordResetEmail } from "../utils/email.js";
+import { sendVerificationEmail, sendPasswordResetEmail } from "../utils/email.js";
 
 // ==================== HELPER FUNCTIONS ====================
 
@@ -99,7 +99,7 @@ export const register = async (req, res) => {
         await user.save();
 
         // TODO: Send verification email
-        // await sendVerificationEmail(user.email, verificationToken);
+        await sendVerificationEmail(user.email, verificationToken);
         console.log(`📧 Verification token: ${verificationToken}`); // For development
 
         // Generate tokens
@@ -391,7 +391,7 @@ export const resendVerificationEmail = async (req, res) => {
         await user.save();
 
         // TODO: Send verification email
-        // await sendVerificationEmail(user.email, verificationToken);
+         await sendVerificationEmail(user.email, verificationToken);
         console.log(`📧 New verification token: ${verificationToken}`);
 
         res.json({
@@ -438,7 +438,7 @@ export const forgotPassword = async (req, res) => {
         await user.save();
 
         // TODO: Send reset email
-        // await sendPasswordResetEmail(user.email, resetToken);
+         await sendPasswordResetEmail(user.email, resetToken);
         console.log(`🔐 Password reset token: ${resetToken}`);
 
         res.json({

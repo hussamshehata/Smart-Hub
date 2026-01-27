@@ -20,7 +20,7 @@ import {
 import { body, param, query, validationResult } from "express-validator";
 
 // Import auth middleware
-// import { authenticateToken, isAdmin } from "../middleware/auth.js";
+import { authenticateToken, isAdmin } from "../middlewares/authmiddleware.js";
 
 const router = express.Router();
 
@@ -146,14 +146,14 @@ const addressIdValidation = [
 // GET current user profile
 router.get(
     "/me",
-    // authenticateToken,
+    authenticateToken,
     getMe
 );
 
 // PUT update profile
 router.put(
     "/profile",
-    // authenticateToken,
+    authenticateToken,
     updateProfileValidation,
     validate,
     updateProfile
@@ -162,7 +162,7 @@ router.put(
 // PUT update password
 router.put(
     "/password",
-    // authenticateToken,
+    authenticateToken,
     updatePasswordValidation,
     validate,
     updatePassword
@@ -171,7 +171,7 @@ router.put(
 // DELETE deactivate account
 router.delete(
     "/account",
-    // authenticateToken,
+    authenticateToken,
     deactivateAccount
 );
 
@@ -182,14 +182,14 @@ router.delete(
 // GET user addresses
 router.get(
     "/addresses",
-    // authenticateToken,
+    authenticateToken,
     getAddresses
 );
 
 // POST add address
 router.post(
     "/addresses",
-    // authenticateToken,
+    authenticateToken,
     addressValidation,
     validate,
     addAddress
@@ -198,7 +198,7 @@ router.post(
 // PUT update address
 router.put(
     "/addresses/:addressId",
-    // authenticateToken,
+    authenticateToken,
     addressIdValidation,
     addressValidation,
     validate,
@@ -208,7 +208,7 @@ router.put(
 // DELETE address
 router.delete(
     "/addresses/:addressId",
-    // authenticateToken,
+    authenticateToken,
     addressIdValidation,
     validate,
     deleteAddress
@@ -221,8 +221,8 @@ router.delete(
 // GET all users
 router.get(
     "/admin/all",
-    // authenticateToken,
-    // isAdmin,
+    authenticateToken,
+    isAdmin,
     userQueryValidation,
     validate,
     getAllUsers
@@ -231,16 +231,16 @@ router.get(
 // GET user statistics
 router.get(
     "/admin/statistics",
-    // authenticateToken,
-    // isAdmin,
+    authenticateToken,
+    isAdmin,
     getUserStatistics
 );
 
 // GET user by ID
 router.get(
     "/admin/:id",
-    // authenticateToken,
-    // isAdmin,
+    authenticateToken,
+    isAdmin,
     idValidation,
     validate,
     getUserById
@@ -249,8 +249,8 @@ router.get(
 // PUT update user
 router.put(
     "/admin/:id",
-    // authenticateToken,
-    // isAdmin,
+    authenticateToken,
+    isAdmin,
     updateUserValidation,
     validate,
     updateUser
@@ -259,8 +259,8 @@ router.put(
 // DELETE user
 router.delete(
     "/admin/:id",
-    // authenticateToken,
-    // isAdmin,
+    authenticateToken,
+    isAdmin,
     idValidation,
     validate,
     deleteUser
